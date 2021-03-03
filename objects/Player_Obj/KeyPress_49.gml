@@ -1,0 +1,1 @@
+global.weapon = "sword";

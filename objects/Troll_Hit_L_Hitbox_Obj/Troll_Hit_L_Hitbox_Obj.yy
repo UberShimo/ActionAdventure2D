@@ -1,0 +1,31 @@
+{
+    "id": "ccbd2690-1887-4461-9171-f358a630f74f",
+    "modelName": "GMObject",
+    "mvc": "1.0",
+    "name": "Troll_Hit_L_Hitbox_Obj",
+    "eventList": [
+        
+    ],
+    "maskSpriteId": "00000000-0000-0000-0000-000000000000",
+    "overriddenProperties": null,
+    "parentObjectId": "a1294f92-97e4-475f-8dcb-e00b6935b6fc",
+    "persistent": false,
+    "physicsAngularDamping": 0.1,
+    "physicsDensity": 0.5,
+    "physicsFriction": 0.2,
+    "physicsGroup": 0,
+    "physicsKinematic": false,
+    "physicsLinearDamping": 0.1,
+    "physicsObject": false,
+    "physicsRestitution": 0.1,
+    "physicsSensor": false,
+    "physicsShape": 0,
+    "physicsShapePoints": [
+        
+    ],
+    "physicsStartAwake": true,
+    "properties": null,
+    "solid": false,
+    "spriteId": "618649bb-8d63-4583-aa63-8497781e93f3",
+    "visible": false
+}

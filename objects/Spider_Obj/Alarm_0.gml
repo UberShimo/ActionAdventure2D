@@ -1,0 +1,3 @@
+ATK = false;
+action = "none";
+

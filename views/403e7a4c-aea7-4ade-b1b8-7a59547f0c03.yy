@@ -1,0 +1,31 @@
+{
+    "id": "403e7a4c-aea7-4ade-b1b8-7a59547f0c03",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "403e7a4c-aea7-4ade-b1b8-7a59547f0c03",
+    "children": [
+        "ef7ca070-6f33-4cbe-b2af-7ab2b16e1d76",
+        "1ee790d3-dd63-47a7-92f6-033533e5e435",
+        "7ee2968e-d16c-4ce5-aba5-8b83b940bdc7",
+        "c8d0f6da-f0cf-4a3d-81f7-24a857351241",
+        "d7c5f849-8895-4227-8ab8-d45aeccb71aa",
+        "8d59e37d-77b9-4568-9ff9-c9522ff2bb02",
+        "608c9b61-a4b6-447a-904b-960fe70aa841",
+        "ddc0e58b-01f7-45dd-ba50-b6bd7c483e2c",
+        "c3b02148-7a5b-417c-972f-e634fb7b7de7",
+        "f0423a32-a7c8-4ffa-ac7d-40f885c7579f",
+        "5790d2e5-0687-4607-8ef2-736ea0f3bfce",
+        "00db3360-9a46-4cb8-af8d-35fd9fee439b",
+        "e35ba465-54e2-4a77-89b7-8230a08011b8",
+        "c809a505-014e-49a3-865a-66b2d3598d56",
+        "87876361-ab10-4f78-b2eb-476407bee0c3",
+        "d73eb98d-6b50-400a-b446-3d00c7c4157e",
+        "081b4432-982a-4290-ac73-c5ad5ef9acac",
+        "f56b43e3-bdbf-4b61-bae8-3a4b830b0225",
+        "682da5a9-8ba0-4bd0-bcac-383356da8f98"
+    ],
+    "filterType": "GMSprite",
+    "folderName": "Golem",
+    "isDefaultView": false,
+    "localisedFolderName": ""
+}
