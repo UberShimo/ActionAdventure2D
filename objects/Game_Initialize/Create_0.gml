@@ -4,6 +4,7 @@ global.hurt = false;
 global.warp = 0;
 global.warpFacingRight = true;
 global.weapon = "sword";
+global.inventoryIsOpen = false;
 
 global.hasSword = true;
 global.hasKnife = false;

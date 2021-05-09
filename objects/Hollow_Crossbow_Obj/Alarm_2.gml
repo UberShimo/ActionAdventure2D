@@ -8,7 +8,7 @@ if (sprite_index = Hollow_Crossbow_Aim_R_Spr)
     instance_create(x, y-4, Hollow_Arrow_R_Obj)
 }
 
-alarm[0] = 4;
-alarm[1] = 40;
+alarm[0] = 8;
+alarm[1] = 80;
 
 audio_play_sound(Swoosh_Sd, 0, false);

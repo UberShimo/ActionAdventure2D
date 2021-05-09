@@ -3,6 +3,6 @@ if(!hurt){
     HP -= 16;
     hurt = true;
     
-    alarm[5] = 4;
+    alarm[5] = 8;
 }
 

@@ -1,4 +1,4 @@
-if(x > Player_Obj.x){
+if(x < Player_Obj.x){
 	image_xscale = -1;
 }
 

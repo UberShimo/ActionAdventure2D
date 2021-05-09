@@ -4,11 +4,11 @@ if(vspeed > 0){
 
 vspeed = 0;
 hspeed = 0;
-canWallClimb = false;
+canWallClimb = true;
 dashing = false;
 
-if !(sprite_index == Player_BoomHammer_Recover_Spr){
-	SPD = 2;
+if(!ATK){
+	SPD = 1;
 }
 
 //Sprite fix

@@ -5,4 +5,4 @@ vspeed = 0;
 ATK = true;
 Fly_up = false;
 
-action_move_point(Player_Obj.x, Player_Obj.y, 6);
+action_move_point(Player_Obj.x, Player_Obj.y, 3);

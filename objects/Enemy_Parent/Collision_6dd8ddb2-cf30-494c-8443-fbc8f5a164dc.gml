@@ -2,15 +2,15 @@ if(!hurt){
     image_blend = c_red;
     HP -= other.dmg;
     hurt = true;
-    vspeed = -4;
+    vspeed = -2;
     
-    alarm[5] = 4;
+    alarm[5] = 8;
     
     if(x > other.x){
-        hspeed = +2;
+        hspeed = +1;
     }
     else{
-        hspeed = -2;
+        hspeed = -1;
     }
 	
 	audio_play_sound(Hit_Sd, 0, false);

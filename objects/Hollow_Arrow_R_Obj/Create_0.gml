@@ -1,4 +1,4 @@
 event_inherited();
 
 projectile = true;
-action_set_hspeed(16);
+action_set_hspeed(8);

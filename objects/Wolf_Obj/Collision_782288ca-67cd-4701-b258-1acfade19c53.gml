@@ -7,7 +7,7 @@ if(ATK){
     global.hurt = true;
     Player_Obj.SPD = 0;
 	
-	Player_Obj.alarm[2] = 4;
+	Player_Obj.alarm[2] = 8;
 	
 	audio_play_sound(Hurt_Sd, 0, false);
 
@@ -27,5 +27,5 @@ if(ATK){
 
 	hspeed = 0;
 	alarm[0] = 0;
-	alarm[9] = 45;
+	alarm[9] = 90;
 }

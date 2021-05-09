@@ -13,5 +13,5 @@ while(place_meeting(x, y, Lightning_Warner_Obj) && x >= 20 && x <= 220){
     }
 }
 
-alarm[0] = 60;
+alarm[0] = 120;
 

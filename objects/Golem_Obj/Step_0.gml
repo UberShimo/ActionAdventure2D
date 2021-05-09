@@ -1,25 +1,5 @@
-//Bleed
-if(bleed > 0){
-    bleed_timer -= bleed;
-
-    if(bleed_timer < 1){
-        image_blend = c_red;
-        HP -= 1;
-        hurt = true;
-        
-        alarm[5] = 4;
-        bleed_timer = 120;
-    }
-    bloodEff -= bleed;
-    
-    if(bloodEff < 1){
-        bloodEff = 24;
-        instance_create(x + random_range(-6, +6), y + random_range(-8, +8), BloodDrop_Obj);
-    }
-}
-
 if(place_free(x, y+1)){
-    gravity = 1;
+    gravity = 0.25;
     gravity_direction = -90;
 }
 else{
@@ -34,10 +14,10 @@ if(!ATK && !hurt){
         if (x < Player_Obj.x - 16){
             if (place_free(x+1, y))
             {
-                x += 0.5;
+                x += 0.25;
                 
                 sprite_index = Golem_R_Spr;
-                image_index += 0.5;
+                image_index += 0.25;
             }
         }
         
@@ -54,9 +34,9 @@ if(!ATK && !hurt){
                     
                     sprite_index = Golem_ROCKnROLL_R_Spr;
                     image_index = 0;
-                    image_speed = 0.5;
+                    image_speed = 0.25;
                     
-                    alarm[1] = 20;
+                    alarm[1] = 40;
                 }
                 else
                 {
@@ -64,14 +44,14 @@ if(!ATK && !hurt){
                     
                     sprite_index = Golem_ATK2_R_Spr;
                     image_index = 0;
-                    image_speed = 0.1;
+                    image_speed = 0.05;
                     
-                    alarm[1] = 48;
+                    alarm[1] = 96;
                 }
             }
             else
             {
-                ATK_load += 1;
+                ATK_load += 0.5;
             }
         }
         
@@ -86,9 +66,9 @@ if(!ATK && !hurt){
                     
                     sprite_index = Golem_ATK1_R_Spr;
                     image_index = 0;
-                    image_speed = 1/8;
+                    image_speed = 1/16;
                     
-                    alarm[1] = 24;
+                    alarm[1] = 48;
                 }
                 else{
                     ATK = true;
@@ -97,13 +77,13 @@ if(!ATK && !hurt){
                     
                     sprite_index = Golem_ATK2_R_Spr;
                     image_index = 0;
-                    image_speed = 0.1;
+                    image_speed = 0.05;
                     
-                    alarm[1] = 48;
+                    alarm[1] = 96;
                 }
             }
             else{
-                ATK_load += 1;
+                ATK_load += 0.5;
             }
         }
     }
@@ -112,10 +92,10 @@ if(!ATK && !hurt){
         if (x > Player_Obj.x + 16){
             if (place_free(x-1, y))
             {
-                x -= 0.5;
+                x -= 0.25;
                 
                 sprite_index = Golem_L_Spr;
-                image_index += 0.5;
+                image_index += 0.25;
             }
         }
         
@@ -132,9 +112,9 @@ if(!ATK && !hurt){
                     
                     sprite_index = Golem_ROCKnROLL_L_Spr;
                     image_index = 0;
-                    image_speed = 0.5;
+                    image_speed = 0.25;
                     
-                    alarm[1] = 20;
+                    alarm[1] = 40;
                 }
                 else
                 {
@@ -142,14 +122,14 @@ if(!ATK && !hurt){
                     
                     sprite_index = Golem_ATK2_L_Spr;
                     image_index = 0;
-                    image_speed = 0.1;
+                    image_speed = 0.05;
                     
-                    alarm[1] = 48;
+                    alarm[1] = 96;
                 }
             }
             else
             {
-                ATK_load += 1;
+                ATK_load += 0.5;
             }
         }
         
@@ -164,9 +144,9 @@ if(!ATK && !hurt){
                     
                     sprite_index = Golem_ATK1_L_Spr;
                     image_index = 0;
-                    image_speed = 1/8;
+                    image_speed = 1/16;
                     
-                    alarm[1] = 24;
+                    alarm[1] = 48;
                 }
                 else{
                     ATK = true;
@@ -175,13 +155,13 @@ if(!ATK && !hurt){
                     
                     sprite_index = Golem_ATK2_L_Spr;
                     image_index = 0;
-                    image_speed = 0.1;
+                    image_speed = 0.05;
                     
-                    alarm[1] = 48;
+                    alarm[1] = 96;
                 }
             }
             else{
-                ATK_load += 1;
+                ATK_load += 0.5;
             }
         }
     }
@@ -191,7 +171,7 @@ if(!ATK && !hurt){
     && ((place_meeting(x+2, y, Collision_Obj) && place_free(x+8, y-16))
     || (place_meeting(x-2, y, Collision_Obj)&& place_free(x-8, y-16)))
     {
-        vspeed = -5.5;
+        vspeed = -3;
     }
 }
 

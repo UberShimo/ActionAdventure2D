@@ -5,16 +5,6 @@
     "name": "The_C",
     "eventList": [
         {
-            "id": "69c63bed-0f68-47a4-80f8-7346957f1274",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "d0197f42-762a-4c3b-a427-39f63c28323a"
-        },
-        {
             "id": "92694d76-8734-4401-98ff-3bc0d2bc3eaa",
             "modelName": "GMEvent",
             "mvc": "1.0",

@@ -9,7 +9,7 @@ instance_create(x, y-56, Lightning_Ball_Obj);
 instance_create(x, y-56, Lightning_Ball_Obj);
 instance_create(x, y-56, Lightning_Ball_Obj);
 
-vspeed = -1;
-alarm[1] = 60;
+vspeed = -0.5;
+alarm[1] = 120;
 stamina = 3;
 

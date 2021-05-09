@@ -1,13 +1,9 @@
 //Initialize
-ATK = false;
+event_inherited();
 HP = 8;
-hurt = false;
 spawn = true;
-bleed = 0;
-bleed_timer = 120;
-bloodEff = 24;
 
-alarm[11] = 28;
+alarm[11] = 56;
 sprite_index = Zombie_Spawn_Spr;
-image_speed = 0.5;
+image_speed = 0.25;
 

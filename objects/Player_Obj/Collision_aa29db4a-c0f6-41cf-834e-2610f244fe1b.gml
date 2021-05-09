@@ -1,7 +1,7 @@
 if (!global.hurt && !dead){
     global.HP -= 1;
     global.hurt = true;
-	alarm[2] = 4;
+	alarm[2] = 8;
 	
 	if(other.vLaunch > 0){
 	    SPD = 0;

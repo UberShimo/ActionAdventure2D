@@ -1,5 +1,4 @@
-if(keyboard_check_pressed(ord("C")) || gamepad_button_check_pressed(0, gp_padu) &&
-place_meeting(x, y, Player_Obj)){
+if(Player_Obj.check_pressed && place_meeting(x, y, Player_Obj) && !Player_Obj.ATK){
     global.hasSpear = true;
     instance_destroy();
 	

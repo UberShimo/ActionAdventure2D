@@ -1,4 +1,4 @@
-/// @description Sprite fix in air
+/// @description Sprite fix (ascending / falling)
 if(!ATK && !climbing && !dashing && place_free(x, y+1)){
 	if(vspeed < 0){
 		sprite_index = Player_Jump_Spr;

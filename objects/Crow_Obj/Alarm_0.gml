@@ -1,4 +1,4 @@
-image_speed = 0.5;
-vspeed = -0.2;
+image_speed = 0.25;
+vspeed = -0.1;
 
-alarm[1] = 30;
+alarm[1] = 60;

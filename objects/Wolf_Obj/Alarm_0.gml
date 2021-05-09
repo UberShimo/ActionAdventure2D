@@ -18,5 +18,5 @@ if (hspeed < 0)
 }
 
 hspeed = 0;
-alarm[9] = 45;
+alarm[9] = 90;
 

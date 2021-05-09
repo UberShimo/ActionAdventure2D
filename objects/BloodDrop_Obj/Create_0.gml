@@ -1,2 +1,2 @@
-image_speed = 0.25;
-
+gravity = 0.05;
+gravity_direction = -90;

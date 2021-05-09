@@ -2,10 +2,10 @@ x = ThunderMan_Obj.x;
 y = ThunderMan_Obj.y;
 
 if(ThunderMan_Obj.sprite_index = ThunderMan_R_Spr){
-    direction += 3;
+    direction += rotation;
 }
 else if(ThunderMan_Obj.sprite_index = ThunderMan_L_Spr){
-    direction -= 3;
+    direction -= rotation;
 }
 else{
     instance_destroy();

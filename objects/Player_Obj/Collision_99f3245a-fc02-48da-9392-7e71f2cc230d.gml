@@ -4,14 +4,14 @@ if (!global.hurt && !dead){
     SPD = 0;
 
     if(facingRight){
-        hspeed = -3;
-        vspeed = -1;
+        hspeed = -1.5;
+        vspeed = -0.5;
     }
     else{
-        hspeed = 3;
-        vspeed = -1;
+        hspeed = 1.5;
+        vspeed = -0.5;
     }
     
-    alarm[2] = 4;
+    alarm[2] = 8;
 }
 

@@ -2,15 +2,24 @@
 instance_create(x, y, The_C);
 
 //Stats
-SPD = 2;
+SPD = 1;
 ATK = false;
 Duck = false;
-canWallClimb = false;
+canWallClimb = true;
 climbing = false;
 dead = false;
 
 dashing = false;
 bloodEff = 0;
+
+knifeVariationBolean = false;
+
+if(global.dash < 8){
+	spawnDashCooldownEff = true;
+}
+else{
+	spawnDashCooldownEff = false;
+}
 
 //Fix sprite
 sprite_index = Player_Spr;

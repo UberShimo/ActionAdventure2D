@@ -1,25 +1,5 @@
-//Bleed
-if(bleed > 0){
-    bleed_timer -= bleed;
-
-    if(bleed_timer < 1){
-        image_blend = c_red;
-        HP -= 1;
-        hurt = true;
-        
-        alarm[5] = 4;
-        bleed_timer = 120;
-    }
-    bloodEff -= bleed;
-    
-    if(bloodEff < 1){
-        bloodEff = 24;
-        instance_create(x + random_range(-4, +4), y + random_range(0, +4), BloodDrop_Obj);
-    }
-}
-
 if(place_free(x, y+1)){
-    gravity = 1;
+    gravity = 0.5;
     gravity_direction = -90;
 }
 else{
@@ -30,10 +10,10 @@ if(!ATK && !hurt){
     image_speed = 0;
     if (x < Player_Obj.x){
         if (place_free(x+1, y) && x < Player_Obj.x - 12){
-            x += 1;
+            x += 0.5;
             
             sprite_index = Spider_R_Spr;
-            image_index += 0.5;
+            image_index += 0.25;
         }
         else if (x > Player_Obj.x-14){
             ATK = true;
@@ -43,16 +23,16 @@ if(!ATK && !hurt){
             image_index = 0;
             image_speed = 0;
             
-            alarm[2] = 6;
+            alarm[2] = 12;
         }
     }
     
     if (x > Player_Obj.x){
         if (place_free(x-1, y) && x > Player_Obj.x + 12){
-            x -= 1;
+            x -= 0.5;
             
             sprite_index = Spider_L_Spr;
-            image_index += 0.5;
+            image_index += 0.25;
         }
         else if (x < Player_Obj.x+14){
             ATK = true;
@@ -62,7 +42,7 @@ if(!ATK && !hurt){
             image_index = 0;
             image_speed = 0;
             
-            alarm[2] = 6;
+            alarm[2] = 12;
         }
     }
     
@@ -71,7 +51,7 @@ if(!ATK && !hurt){
     && ((place_meeting(x+4, y, Collision_Obj) && place_free(x+8, y-16))
     || (place_meeting(x-4, y, Collision_Obj)&& place_free(x-8, y-16)))
     {
-        vspeed = -5.5;
+        vspeed = -2.75;
     }
 }
 

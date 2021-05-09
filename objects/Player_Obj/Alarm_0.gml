@@ -1,7 +1,7 @@
 /// @description RESET
 ATK = false;
 climbing = false;
-SPD = 2;
+SPD = 1;
 
 //Sprite fix
 if(keyboard_check(vk_down)){

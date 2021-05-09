@@ -1,4 +1,4 @@
-action_set_alarm(30, 0);
+action_set_alarm(60, 0);
 action_move_contact(-90, -1, 0);
 
 audio_play_sound(Rumble_Sd, 0, false);

@@ -12,6 +12,19 @@ if(global.weapon = "sword"){
 	}
 	audio_play_sound(Slash_Sd, 0, false);
 }
+else if(global.weapon = "knife"){
+	hitbox = instance_create(x, y, Knife_ATK_Hitbox);
+	
+	if(!facingRight){
+		hitbox.image_xscale = -1;
+	}
+	if(Duck){
+		hitbox.y += 5;
+	}
+	audio_play_sound(Slash_Sd, 0, false);
+	
+	SPD = 0.5; // Knife aint stopping!
+}
 else if(global.weapon = "spear"){
 	hitbox = instance_create(x, y, Spear_ATK_Hitbox);
 	
@@ -67,36 +80,23 @@ else if(global.weapon = "scythe"){
 	}
 	audio_play_sound(Slash_Sd, 0, false);
 }
-else if(global.weapon = "knife"){
-	hitbox = instance_create(x, y, Knife_ATK_Hitbox);
-	
-	if(!facingRight){
-		hitbox.image_xscale = -1;
-	}
-	if(Duck){
-		hitbox.y += 5;
-	}
-	audio_play_sound(Slash_Sd, 0, false);
-}
 else if(global.weapon = "boomhammer"){
     if (facingRight){
         sprite_index = Player_BoomHammer_Recover_Spr;
         image_index = 0;
-        image_speed = 0.5;
         
-        vspeed = -6;
-        hspeed = -2;
+        vspeed = -3;
+        hspeed = -1;
         
         instance_create(x+12, y+8, Explosion_Obj);
     }
     else{
         sprite_index = Player_BoomHammer_Recover_Spr;
         image_index = 0;
-        image_speed = 0.5;
 		image_xscale = -1;
         
-        vspeed = -6;
-        hspeed = +2;
+        vspeed = -3;
+        hspeed = +1;
         
         instance_create(x-12, y+8, Explosion_Obj);
     }

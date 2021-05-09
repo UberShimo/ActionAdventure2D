@@ -4,6 +4,6 @@ if(ATK){
     Fly_up = true;
     ATK = false;
     
-    alarm[2] = 80;
+    alarm[2] = 160;
 }
 
