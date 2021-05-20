@@ -1,4 +1,1 @@
-if(global.hasRapier){
-    instance_destroy();
-}
-
+vspeed = 0.25;

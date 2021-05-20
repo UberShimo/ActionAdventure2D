@@ -10,6 +10,7 @@ climbing = false;
 dead = false;
 
 dashing = false;
+dashEffSpawnY = irandom_range(-2, 4);
 bloodEff = 0;
 
 knifeVariationBolean = false;

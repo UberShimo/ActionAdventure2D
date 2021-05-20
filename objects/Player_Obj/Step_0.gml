@@ -177,7 +177,7 @@ if(attack_input && !ATK){
         }
             
         alarm[0] = image_number * 4;
-        alarm[1] = 12;
+        alarm[1] = 8;
     }
     else if(global.weapon = "axe"){
         if(Duck){
@@ -252,12 +252,7 @@ if(attack_input && !ATK){
         alarm[1] = 16;
     }
     else if(global.weapon = "boomhammer"){
-        if(Duck){
-			sprite_index = Player_BoomHammer_ATK_Duck_Spr;
-		}
-		else{
-			sprite_index = Player_BoomHammer_ATK_Spr;
-		}
+		sprite_index = Player_BoomHammer_ATK_Spr;
 			
         if (facingRight){
 			image_xscale = 1;
@@ -267,8 +262,9 @@ if(attack_input && !ATK){
         }
         
 		// Dont use image_number
-        alarm[0] = 96;
-        alarm[1] = 32;
+        alarm[0] = 128;
+        alarm[1] = 64;
+		SPD = 0.1; // Real slow during boomhammering
     }
 }
 } // End of actions
@@ -307,15 +303,18 @@ else if((!dash_input && dashing) || global.dash < 1){
 	dashing = false;
 	SPD = 1;
 }
-// Dash effect
+// Dash cooldown eff
 if(spawnDashCooldownEff && global.dash == 8){
 	audio_play_sound(Dash_Cooldown_Sd, 0, false);
 	instance_create(Player_Obj.x, Player_Obj.y, Dash_Cooldown_Obj);
 	spawnDashCooldownEff = false;
 }
 else if(dashing){
+	if(irandom_range(1, 3) == 1){
+		dashEffSpawnY = irandom_range(-2, 4);
+	}
     global.dash -= 0.5;
-    instance_create(x,y,Dash_Eff_Obj);
+    instance_create_depth(x, y+dashEffSpawnY, -5, Dash_Eff_Obj);
 	spawnDashCooldownEff = true;
 }
 else if(global.dash < 8){

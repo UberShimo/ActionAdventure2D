@@ -1,5 +1,5 @@
 dmg = 1;
 projectile = false;
 
-hLaunch = 2;
-vLaunch = 2;
+hLaunch = 1;
+vLaunch = 1.5;

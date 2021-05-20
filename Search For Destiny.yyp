@@ -335,14 +335,6 @@
             }
         },
         {
-            "Key": "137e1eef-5eec-418c-8993-0421cb97d9d8",
-            "Value": {
-                "id": "849cfd89-f3b6-4c89-83f4-48201a68297a",
-                "resourcePath": "sprites\\Player_BoomHammer_ATK_Duck_Spr\\Player_BoomHammer_ATK_Duck_Spr.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "145513ee-69bf-4c32-997f-60a26eed42eb",
             "Value": {
                 "id": "56ff5c59-2f28-4c3d-ba7d-704d7b54d40b",
@@ -551,6 +543,14 @@
             }
         },
         {
+            "Key": "211d4ba5-d64b-4d26-a70d-f806dfa9bef6",
+            "Value": {
+                "id": "157770d9-2cc9-4a52-a195-9f16f39cae42",
+                "resourcePath": "sprites\\Weapon_Get_Spr\\Weapon_Get_Spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "215d736f-b239-4ad6-bc8e-c96ed9d13a10",
             "Value": {
                 "id": "e829205a-b981-47a5-a07a-6c08b895be6b",
@@ -620,6 +620,14 @@
                 "id": "0807ea2e-cc7f-45f7-9386-701fe8801c0a",
                 "resourcePath": "sprites\\Bricks_Tile\\Bricks_Tile.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2405c9ed-f6e5-4288-a179-3e6341ac5fb2",
+            "Value": {
+                "id": "5588787d-aa69-47c9-bac9-b260aff6a1a3",
+                "resourcePath": "tilesets\\Church_Outside_tileset\\Church_Outside_tileset.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -1367,6 +1375,14 @@
             }
         },
         {
+            "Key": "53558736-6403-4102-895c-c942d08fccfd",
+            "Value": {
+                "id": "40463db1-5bd7-4013-bac9-806fa2ae8e22",
+                "resourcePath": "sprites\\Statue_Tile\\Statue_Tile.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "54ac9abd-a292-4cf1-9993-a0097e006c27",
             "Value": {
                 "id": "506d38dc-1f49-42c9-a754-719d13f06750",
@@ -1387,6 +1403,14 @@
             "Value": {
                 "id": "39912805-d397-480f-be80-e24aae46109a",
                 "resourcePath": "objects\\Rapier_UI_Obj\\Rapier_UI_Obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "54c96051-3edd-4329-9c39-50717247905d",
+            "Value": {
+                "id": "a422b661-b8a0-43a0-ac2d-9b1703fc4420",
+                "resourcePath": "objects\\Weapon_Get_Obj\\Weapon_Get_Obj.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1719,6 +1743,14 @@
             }
         },
         {
+            "Key": "66f2c524-bee7-4196-8700-ac85f3d99841",
+            "Value": {
+                "id": "088f9301-1688-4824-a0ed-23be4d7a4a91",
+                "resourcePath": "objects\\Rapier_Spawner_Obj\\Rapier_Spawner_Obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "67866d57-a35e-4936-b576-5f9e4ca289c3",
             "Value": {
                 "id": "569de45f-ee29-4f29-8996-b1882f5598e2",
@@ -1763,6 +1795,14 @@
             "Value": {
                 "id": "0a12d202-7a9f-4c3a-a35a-b0531c2639ea",
                 "resourcePath": "sprites\\Troll_Smash_L_hitbox_Spr\\Troll_Smash_L_hitbox_Spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6916c932-99cc-4035-b581-c9fb622aae03",
+            "Value": {
+                "id": "ab9ba844-47ce-4f4e-be2e-1c69a6e0d0f9",
+                "resourcePath": "sprites\\Church_Outside_Tile\\Church_Outside_Tile.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3511,6 +3551,14 @@
             }
         },
         {
+            "Key": "e2d960e4-bc52-4c1a-ad8b-973c4d23b464",
+            "Value": {
+                "id": "5d00f324-9b82-4100-b6f0-8f419fa5878d",
+                "resourcePath": "sprites\\Church_Inside_Tile\\Church_Inside_Tile.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e2e68cb7-09fc-4c3b-a948-7b03e7db1c24",
             "Value": {
                 "id": "cff06b8c-4bb5-46f7-9390-4c30fd4cb242",
@@ -3692,6 +3740,14 @@
                 "id": "a27e8fd6-359f-4add-96ea-9abfe0d62f9c",
                 "resourcePath": "sprites\\Hollow_Arrow_Eff_Spr\\Hollow_Arrow_Eff_Spr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f2aed3c9-cea6-4fe6-bc7f-a8ca9259e430",
+            "Value": {
+                "id": "e078882e-d7eb-4746-bfd9-9407fee36458",
+                "resourcePath": "tilesets\\Angel_Statue_tileset\\Angel_Statue_tileset.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
