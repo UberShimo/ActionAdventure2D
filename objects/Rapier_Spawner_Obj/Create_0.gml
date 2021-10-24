@@ -2,4 +2,4 @@ if(global.hasRapier){
     instance_destroy();
 }
 
-duckTimer = 300;
+duckTimer = 240;

@@ -1,6 +1,7 @@
 // ------ INPUT ------ //
 
-if(!global.inventoryIsOpen){ // ACTIONS
+
+// ACTIONS
 
 // Right
 if(right_input){
@@ -77,7 +78,7 @@ else if(!down_input){
 }
 
 //Jump
-if(jump_input && !Duck && !ATK && !climbing && !place_free(x, y+1) && !place_meeting(x, y, Web_Hit_Obj)){
+if(jump_pressed && !Duck && !ATK && !climbing && !place_free(x, y+1) && !place_meeting(x, y, Web_Hit_Obj)){
     vspeed = -2.8;
 }
 // Wall climb
@@ -262,12 +263,11 @@ if(attack_input && !ATK){
         }
         
 		// Dont use image_number
-        alarm[0] = 128;
-        alarm[1] = 64;
-		SPD = 0.1; // Real slow during boomhammering
+        alarm[0] = 112;
+        alarm[1] = 48;
+		SPD = 0.2; // Real slow during boomhammering
     }
 }
-} // End of actions
 
 // DASH ----====>
 if (dash_input && global.dash == 8 && !dashing && !dead &&

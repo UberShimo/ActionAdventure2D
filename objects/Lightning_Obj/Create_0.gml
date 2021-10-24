@@ -1,6 +1,6 @@
 event_inherited();
 
-y = 0;
+y = Lightning_Director_Obj.y - 112;
 alarm[0] = 8;
 
 vLaunch = 1;

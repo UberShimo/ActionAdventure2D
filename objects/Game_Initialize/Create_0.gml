@@ -15,6 +15,12 @@ global.hasRapier = false;
 global.hasScythe = false;
 global.hasBoomHammer = false;
 
+global.forestShortcutFound = false;
+global.dungeonShortcutFound = false;
+global.graveShortcutFound = false;
+
+
+global.priestSlain = false;
 global.thunderManSlain = false;
 global.infernoSlain = false;
 global.stoneFaceSlain = false;

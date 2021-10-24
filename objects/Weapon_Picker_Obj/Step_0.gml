@@ -20,7 +20,7 @@ else if(up_pressed){
 }
 
 // Choose weapon
-if(inventory_input){
+if(pickWeapon_input){
 	if(place_meeting(x, y, Sword_UI_Obj)){
 		global.weapon = "sword";
 	}
@@ -45,4 +45,5 @@ if(inventory_input){
 	else if(place_meeting(x, y, BoomHammer_UI_Obj)){
 		global.weapon = "boomhammer";
 	}
+	// inventoryIsOpen variable is handled only by Player_obj
 }

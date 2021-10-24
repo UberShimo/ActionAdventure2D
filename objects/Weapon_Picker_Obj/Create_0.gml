@@ -2,11 +2,9 @@
 instance_create_depth(0, 0, -90, Inventory_Obj);
 instance_create_depth(0, 0, -90, Inventory_Frame_Obj);
 
-// extra X/Y required for keeping position relative to the player
-halfViewWidth = (camera_get_view_width(0) / 4) / 2;
-halfViewHeight = (camera_get_view_height(0) / 4) / 2;
-extraX = halfViewWidth - (24*4);
-extraY = -halfViewHeight;
+// Camera size is 4 times bigger than the pixel view. Therefore always divide by 4 when getting width/height
+extraX = -24*4;
+extraY = 0;
 
 // Spawn aviable weapons
 if(global.hasSword){

@@ -1,4 +1,4 @@
-if(y = 72 && x = 224){
+if(y = other.y+8 && x = other.x+8){
     sprite_index = ThunderMan_L_Spr;
     
     if(stamina > 0){

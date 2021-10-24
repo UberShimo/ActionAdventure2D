@@ -85,7 +85,7 @@ else if(global.weapon = "boomhammer"){
         sprite_index = Player_BoomHammer_Recover_Spr;
         image_index = 0;
         
-        vspeed = -3;
+        vspeed = -2.8;
         hspeed = -1;
         
         instance_create(x+12, y+8, Explosion_Obj);
@@ -95,7 +95,7 @@ else if(global.weapon = "boomhammer"){
         image_index = 0;
 		image_xscale = -1;
         
-        vspeed = -3;
+        vspeed = -2.8;
         hspeed = +1;
         
         instance_create(x-12, y+8, Explosion_Obj);

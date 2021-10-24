@@ -48,4 +48,7 @@ else if(global.warp = 3){
     x = Warp3_Obj.x;
     y = Warp3_Obj.y;
 }
-
+else if(global.warp = 4){
+    x = Warp4_Obj.x;
+    y = Warp4_Obj.y;
+}

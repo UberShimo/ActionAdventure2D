@@ -1,7 +1,5 @@
 TODO{
 	Dungeon time baby! With traps and platforming
-	Maybe change camera logic (into coded logic) and make you see more above the player instead of center.
-	Pray with patience and recieve the angels blessing
 }
 
 Story: Game starts with a dream (tutorial), then you see the 3 boss faces and say "Gotta kill those bastards..." then you wake up. Kill the evil creatures to calm your land.
@@ -29,7 +27,7 @@ Lava dungeon: Lava frogs (that jumps), Lava lizard (Whip), Lava turtle (Spin the
 Inferno guy (Boss)
 
 Graveyard: Skeleton, Zombies
-Ruins / Desert: Wind fighters(Shotel (attack high then low, teleport behind you), Ranger(Boomerang, Grenade)), Cobras (Spit many drops upward, attack low)
+Ruins / Desert: Wind fighters(Shotel (attack high then low, teleport behind you), Ranger(Boomerang, Grenade)), Cobras (Spit many drops upward toward you)
 Pyramid: Stone face (Boss)
 
 
