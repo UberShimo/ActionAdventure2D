@@ -16,6 +16,7 @@ if(!ATK && !hurt){
             x += 0.5;
             
             sprite_index = Hollow_Sword_R_Spr;
+			image_xscale = 1;
             image_index += 0.25;
         }
         
@@ -28,6 +29,7 @@ if(!ATK && !hurt){
                 action = "ATK1_R";
                 
                 sprite_index = Hollow_ATK1_R_Spr;
+				image_xscale = 1;
                 image_index = 0;
                 image_speed = 0;
                 
@@ -38,6 +40,7 @@ if(!ATK && !hurt){
                 action = "ATK2_R"
                 
                 sprite_index = Hollow_ATK2_R_Spr;
+				image_xscale = 1;
                 image_index = 0;
                 image_speed = 0;
                 
@@ -52,8 +55,9 @@ if(!ATK && !hurt){
         {
             x -= 0.5;
             
-            sprite_index = Hollow_Sword_L_Spr;
+            sprite_index = Hollow_Sword_R_Spr;
             image_index += 0.25;
+			image_xscale = -1;
         }
         
         if (x < Player_Obj.x+18)
@@ -64,7 +68,8 @@ if(!ATK && !hurt){
             {
                 action = "ATK1_L";
                 
-                sprite_index = Hollow_ATK1_L_Spr;
+                sprite_index = Hollow_ATK1_R_Spr;
+				image_xscale = -1;
                 image_index = 0;
                 image_speed = 0;
                 
@@ -74,7 +79,8 @@ if(!ATK && !hurt){
             {
                 action = "ATK2_L"
                 
-                sprite_index = Hollow_ATK2_L_Spr;
+                sprite_index = Hollow_ATK2_R_Spr;
+				image_xscale = -1;
                 image_index = 0;
                 image_speed = 0;
                 

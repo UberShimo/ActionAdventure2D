@@ -3,6 +3,7 @@
 
 // ACTIONS
 
+#region Movement
 // Right
 if(right_input){
 	//Standing
@@ -113,8 +114,9 @@ if(jump_pressed && place_free(x, y+1) && canWallClimb){
         climbing = true;
     }
 }
+#endregion
 
-// ----- Big ass ATTACK code ----- // 0==[]::::::::::::::::::>
+#region Big ass ATTACK code  0==[]::::::::::::::::::>
 if(attack_input && !ATK){
     ATK = true;
 	SPD = 0.5;
@@ -232,7 +234,7 @@ if(attack_input && !ATK){
         }
             
         alarm[0] = image_number * 4;
-        alarm[1] = 8;
+        alarm[1] = 9;
     }
     else if(global.weapon = "scythe"){
         if(Duck){
@@ -268,10 +270,11 @@ if(attack_input && !ATK){
 		SPD = 0.2; // Real slow during boomhammering
     }
 }
+#endregion
 
-// DASH ----====>
+#region DASH ----====>
 if (dash_input && global.dash == 8 && !dashing && !dead &&
-!((global.weapon == "boomhammer" || global.weapon == "knife") && ATK)){ // cant dash during knife or boomhammer attack
+!((global.weapon == "boomhammer") && ATK)){ // cant dash during boomhammer attack
 	if(ATK){
 		global.dash -= 5;
 		ATK = false;
@@ -320,17 +323,19 @@ else if(dashing){
 else if(global.dash < 8){
     global.dash += 0.1;
 }
+#endregion
+
+
+// ----- OTHER ----- //
 
 // Inventory
 if(inventory_input){
 	if(!global.inventoryIsOpen){
 		sprite_index = Player_Spr;
-		instance_create_depth(0, 0, -110, Weapon_Picker_Obj);
+		instance_create_depth(0, 0, -1010, Weapon_Picker_Obj);
 	}
 	global.inventoryIsOpen = !global.inventoryIsOpen;
 }
-
-// ----- OTHER ----- //
 
 // Reset sprite
 if (!right_input && !left_input && !ATK && !Duck && !climbing){

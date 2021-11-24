@@ -3,6 +3,7 @@ if (action = "ATK1_R")
     if (ATK1 = 0)
     {
         sprite_index = Hollow_ATK1_R_Spr;
+		image_xscale = 1;
         image_index = 1;
         image_speed = 0.25;
         
@@ -15,6 +16,7 @@ if (action = "ATK1_R")
     else if (ATK1 = 1)
     {
         sprite_index = Hollow_Sword_Exhausted_R_Spr;
+		image_xscale = 1;
         image_index = 0;
         image_speed = 1/8;
         
@@ -34,7 +36,8 @@ if (action = "ATK1_L")
 {
     if (ATK1 = 0)
     {
-        sprite_index = Hollow_ATK1_L_Spr;
+        sprite_index = Hollow_ATK1_R_Spr;
+		image_xscale = -1;
         image_index = 1;
         image_speed = 0.25;
         
@@ -46,7 +49,8 @@ if (action = "ATK1_L")
     }
     else if (ATK1 = 1)
     {
-        sprite_index = Hollow_Sword_Exhausted_L_Spr;
+        sprite_index = Hollow_Sword_Exhausted_R_Spr;
+		image_xscale = -1;
         image_index = 0;
         image_speed = 1/8;
         
@@ -65,6 +69,7 @@ if (action = "ATK1_L")
 if (action = "ATK2_R")
 {
     sprite_index = Hollow_ATK2_R_Spr;
+	image_xscale = 1;
     image_index = 1;
     image_speed = 0.25;
     
@@ -76,7 +81,8 @@ if (action = "ATK2_R")
 
 if (action = "ATK2_L")
 {
-    sprite_index = Hollow_ATK2_L_Spr;
+    sprite_index = Hollow_ATK2_R_Spr;
+	image_xscale = -1;
     image_index = 1;
     image_speed = 0.25;
     

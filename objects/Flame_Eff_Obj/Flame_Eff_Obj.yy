@@ -5,23 +5,13 @@
     "name": "Flame_Eff_Obj",
     "eventList": [
         {
-            "id": "48087712-8f6c-499c-bfc5-acc815e86e26",
+            "id": "2ac405fc-d841-45f7-a635-9f55b33f17df",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "65a621ce-2485-4c36-ad0e-73a9bacb88b6"
-        },
-        {
-            "id": "80bd959f-f4d4-4984-91c7-c9d20e7d1d2c",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 7,
-            "eventtype": 7,
+            "eventtype": 3,
             "m_owner": "65a621ce-2485-4c36-ad0e-73a9bacb88b6"
         }
     ],

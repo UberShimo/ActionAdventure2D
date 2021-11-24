@@ -19,6 +19,12 @@ if(!ATK){
     }
 }
 
+if(ATK){
+	eff = instance_create_depth(x, y, 10, Crow_Eff_Obj);
+	eff.sprite_index = sprite_index;
+	eff.image_index = image_index;
+}
+
 if(HP <= 0 && !hurt){
     instance_destroy();
 }

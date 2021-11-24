@@ -49,6 +49,8 @@ if (hurt = false &&
         sprite_index = Wolf_Charge_L_Spr;
         image_speed = 0;
         image_index = 0;
+		vspeed = -1;
+		hspeed = 1;
         
         charge = true;
         
@@ -62,6 +64,8 @@ if (hurt = false &&
         sprite_index = Wolf_Charge_R_Spr;
         image_speed = 0;
         image_index = 0;
+		vspeed = -1;
+		hspeed = -1;
         
         charge = true;
         

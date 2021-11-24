@@ -18,6 +18,7 @@ if(!ATK && !hurt){
                 x += 0.2;
                 
                 sprite_index = Troll_R_Spr;
+				image_xscale = 1;
                 image_index += 0.1;
             }
         }
@@ -30,6 +31,7 @@ if(!ATK && !hurt){
                 x += 0.2;
                 
                 sprite_index = Troll_R_Spr;
+				image_xscale = 1;
                 image_index -= 0.1;
             }
             
@@ -41,6 +43,7 @@ if(!ATK && !hurt){
                 action = "Spit_R";
                 
                 sprite_index = Troll_Spit_R_Spr;
+				image_xscale = 1;
                 image_index = 0;
                 image_speed = 0;
                 
@@ -59,6 +62,7 @@ if(!ATK && !hurt){
                 x += 0.2;
                 
                 sprite_index = Troll_R_Spr;
+				image_xscale = 1;
                 image_index += 0.1;
             }
             
@@ -70,6 +74,7 @@ if(!ATK && !hurt){
                     action = "Hit_R";
                     
                     sprite_index = Troll_Hit_R_Spr;
+					image_xscale = 1;
                     image_index = 0;
                     image_speed = 0;
                     
@@ -81,6 +86,7 @@ if(!ATK && !hurt){
                     action = "Smash_R";
                     
                     sprite_index = Troll_Charge_Smash_R_Spr;
+					image_xscale = 1;
                     image_index = 0;
                     image_speed = 0.25;
                     
@@ -103,6 +109,7 @@ if(!ATK && !hurt){
                 x -= 0.2;
                 
                 sprite_index = Troll_L_Spr;
+				image_xscale = 1;
                 image_index += 0.1;
             }
         }
@@ -126,6 +133,7 @@ if(!ATK && !hurt){
                 action = "Spit_L";
                 
                 sprite_index = Troll_Spit_L_Spr;
+				image_xscale = 1;
                 image_index = 0;
                 image_speed = 0;
                 
@@ -144,6 +152,7 @@ if(!ATK && !hurt){
                 x -= 0.2;
                 
                 sprite_index = Troll_L_Spr;
+				image_xscale = 1;
                 image_index += 0.1;
             }
             
@@ -154,7 +163,8 @@ if(!ATK && !hurt){
                     ATK_load = 0;
                     action = "Hit_L";
                     
-                    sprite_index = Troll_Hit_L_Spr;
+                    sprite_index = Troll_Hit_R_Spr;
+					image_xscale = -1;
                     image_index = 0;
                     image_speed = 0;
                     
@@ -166,6 +176,7 @@ if(!ATK && !hurt){
                     action = "Smash_L";
                     
                     sprite_index = Troll_Charge_Smash_L_Spr;
+					image_xscale = 1;
                     image_index = 0;
                     image_speed = 0.25;
                     

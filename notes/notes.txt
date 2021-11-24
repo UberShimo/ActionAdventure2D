@@ -1,18 +1,20 @@
 TODO{
-	Dungeon time baby! With traps and platforming
+	Make entire game more crisp and cute.
 }
 
 Story: Game starts with a dream (tutorial), then you see the 3 boss faces and say "Gotta kill those bastards..." then you wake up. Kill the evil creatures to calm your land.
+After that you go to sleep and face the creator(simons face). "You have defeated your worst nightmare and can now finally rest at ease".
 
 Weapon locations:
 Sword: Start
 Knife: Hard jump in home
-Spear: Up in tree?
+Spear: Up in tree
 Axe: Behind wheat
 Katana: In grave
 Rapier: Duck (pray) in front of angel statue. Hint exist in church.
 Scythe: In ghost house
-Boomhammer:	Hidden tunnel in the pit
+Boomhammer:	Hidden tunnel in the dungeon
+
 
 ENEMIES
 
@@ -23,11 +25,12 @@ Thunder mage (Boss)
 
 Church: Priest (mini boss)
 Dungeon: Giant worms (Attack from underneath), Traps, Platforming
-Lava dungeon: Lava frogs (that jumps), Lava lizard (Whip), Lava turtle (Spin then roll low towards you)
-Inferno guy (Boss)
+Lava dungeon: Lava frogs (that jumps), Big lava snake(mini boss)
+blazeMan guy (Boss)
 
 Graveyard: Skeleton, Zombies
-Ruins / Desert: Wind fighters(Shotel (attack high then low, teleport behind you), Ranger(Boomerang, Grenade)), Cobras (Spit many drops upward toward you)
+Ruins: Wind fighters(Shotel (attack high then low, teleport behind you), Ranger(Boomerang, Grenade))
+Desert: Wind leader(if you walk close to pyramid he teleport in front of you, throw wavy boomerang (~~~~) that goes back and forth, do 3 attacks forward)
 Pyramid: Stone face (Boss)
 
 
@@ -39,24 +42,30 @@ Thunder mage{
 }
 Priest{
 	Teleport,
-	creates light walls that you cant pass through until Priest is dead,
-	Create lights at random locations that shoot toward player (-+45degrees),
+	Creates light walls that you cant pass through until Priest is dead,
+	Create lights at random locations that shoot toward player,
 	Shoot out bouncing spell that bounce around in room
 }
-Inferno guy{
+Blazing man{
 	Deals dmg on touch and walk almost all time,
-	can jump into lava and appear on the other side of stage,
+	Spin jump and spawn 3 fireballs that shoots after long random delay
+	Run toward you fast then jump into lava,
 	Flame sword close then far away,
-	Run toward you fast!,
-	Spin jump and spawn 3 fireballs that shoots one at a time
+	If he lands in lava he splash drops all over the stage and appear on the other side of stage,
 }
 Stone face{
 	Smash ground to send earth wave,
 	Stones fall from ceiling all time,
 	Smash froward (gotta duck that one)
 }
+The creator{
+	Spawn 3 orbs that spawn from eyes and mouth. Each have a different attack and must be destroyed.
+	Orb 1: 3 projectiles that spin in circle outward
+	Orb 2: Projectiles from above and underneath
+	Orb 3: Projectile that shoot toward you then stop on repeat
+}
 
 BOSS QUOTES:
 Thunder mage: Jelous of my age? You should be... Even if you kill me now... You will suffer knowing a bastard like me has lived a good life for 102 years! AHAHAHAHA
-Inferno guy: Oh ohhhh... Nerd alert... (Player: HOW DARE YOU!?)
+blazeMan guy: Oh ohhhh... Nerd alert... (Player: HOW DARE YOU!?)
 Stone face: Free you mind from violence. And let me beat you up.

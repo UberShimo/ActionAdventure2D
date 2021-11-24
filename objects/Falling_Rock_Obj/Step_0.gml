@@ -1,0 +1,1 @@
+instance_create(x, y, Falling_Rock_Eff_Obj);

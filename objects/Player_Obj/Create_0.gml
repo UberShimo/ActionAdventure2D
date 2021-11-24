@@ -8,7 +8,6 @@ Duck = false;
 canWallClimb = true;
 climbing = false;
 dead = false;
-
 dashing = false;
 dashEffSpawnY = irandom_range(-2, 4);
 bloodEff = 0;
@@ -24,7 +23,7 @@ else{
 
 //Fix sprite
 sprite_index = Player_Spr;
-depth = -5;
+depth = 0;
 
 if(global.warpFacingRight){
     facingRight = true;

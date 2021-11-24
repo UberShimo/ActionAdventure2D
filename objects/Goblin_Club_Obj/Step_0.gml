@@ -13,6 +13,7 @@ if(!ATK && !hurt){
             x -= 0.5;
         }
         sprite_index = Goblin_Club_Walk_L_Spr;
+		image_xscale = 1;
     }
     
     if (x < Player_Obj.x){
@@ -21,11 +22,14 @@ if(!ATK && !hurt){
             x += 0.5;
         }
         sprite_index = Goblin_Club_Walk_R_Spr;
+		image_xscale = 1;
     }
     
 	// Attack
     if (place_meeting(x-8, y, Player_Obj)){
-        sprite_index = Goblin_Club_ATK_L_Spr;
+        sprite_index = Goblin_Club_ATK_R_Spr;
+		image_xscale = 1;
+		image_xscale = -1;
         image_index = 0;
         
         ATK = true;
@@ -35,6 +39,7 @@ if(!ATK && !hurt){
     
     if (place_meeting(x+8, y, Player_Obj)){
         sprite_index = Goblin_Club_ATK_R_Spr;
+		image_xscale = 1;
         image_index = 0;
         
         ATK = true;

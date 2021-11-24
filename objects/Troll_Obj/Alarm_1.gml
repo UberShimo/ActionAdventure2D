@@ -1,6 +1,7 @@
 if (action = "Hit_R")
 {
     sprite_index = Troll_Hit_R_Spr;
+	image_xscale = 1;
     image_index = 1;
     image_speed = 0.25;
     
@@ -12,7 +13,8 @@ if (action = "Hit_R")
 
 if (action = "Hit_L")
 {
-    sprite_index = Troll_Hit_L_Spr;
+    sprite_index = Troll_Hit_R_Spr;
+	image_xscale = -1;
     image_index = 1;
     image_speed = 0.25;
     
@@ -25,6 +27,7 @@ if (action = "Hit_L")
 if (action = "Smash_R")
 {
     sprite_index = Troll_Smash_R_Spr;
+	image_xscale = 1;
     image_index = 0;
     image_speed = 0.25;
     
@@ -36,7 +39,8 @@ if (action = "Smash_R")
 
 if (action = "Smash_L")
 {
-    sprite_index = Troll_Smash_L_Spr;
+    sprite_index = Troll_Smash_R_Spr;
+	image_xscale = -1;
     image_index = 0;
     image_speed = 0.25;
     
@@ -49,6 +53,7 @@ if (action = "Smash_L")
 if (action = "Spit_R")
 {
     sprite_index = Troll_Spit_R_Spr;
+	image_xscale = 1;
     image_index = 1;
     image_speed = 0;
 
@@ -61,6 +66,7 @@ if (action = "Spit_R")
 if (action = "Spit_L")
 {
     sprite_index = Troll_Spit_L_Spr;
+	image_xscale = 1;
     image_index = 1;
     image_speed = 0;
 

@@ -3,7 +3,7 @@ if(!hurt){
     HP -= other.dmg;
     hurt = true;
     
-    alarm[5] = 8;
+    alarm[5] = other.stun;
 	
 	audio_play_sound(Hit_Sd, 0, false);
 }

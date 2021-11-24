@@ -1,11 +1,11 @@
-if(!place_meeting(x, y, Zombie_Obj)){
+if(other.object_index != Zombie_Obj && other.object_index != Skeleton_Obj){
 	// Anti Dash
     if(dashing){
         if(facingRight){
-            x -= 2;
+            x -= SPD;
         }
         else{
-            x += 2;
+            x += SPD;
         }
     }
     

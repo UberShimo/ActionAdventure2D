@@ -1,0 +1,1 @@
+sprite_index = Deep_Eye_Spr;

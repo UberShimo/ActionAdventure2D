@@ -11,8 +11,16 @@ if (!global.hurt && !dead){
 			if(other.hspeed > 0){
 				hspeed = other.hLaunch;
 			}
-			else{
+			else if(other.hspeed < 0){
 				hspeed = -other.hLaunch;
+			}
+			else{
+				if(facingRight){
+					hspeed = -other.hLaunch;
+				}
+				else{
+					hspeed = other.hLaunch;
+				}
 			}
 		}
 		// Normal hitbox

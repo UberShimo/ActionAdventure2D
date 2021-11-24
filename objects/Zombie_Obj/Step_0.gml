@@ -5,7 +5,7 @@ if(!spawn && !ATK && !hurt){
     if (x > Player_Obj.x){
         if (place_free(x-1, y))
         {
-            x -= 0.5;
+            x -= 0.25;
         }
         sprite_index = Zombie_L_Spr;
         image_index += 0.10;
@@ -13,7 +13,7 @@ if(!spawn && !ATK && !hurt){
     else{
         if (place_free(x+1, y))
         {
-            x += 0.5;
+            x += 0.25;
         }
         sprite_index = Zombie_R_Spr;
         image_index += 0.05;

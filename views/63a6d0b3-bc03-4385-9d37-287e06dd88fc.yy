@@ -5,7 +5,8 @@
     "name": "63a6d0b3-bc03-4385-9d37-287e06dd88fc",
     "children": [
         "42a03fa8-b170-40e0-a9e8-36e48d9cf984",
-        "33921e8a-c4a7-4e17-b297-62e679819c71"
+        "33921e8a-c4a7-4e17-b297-62e679819c71",
+        "04ef663e-02b8-45a5-89d6-af82fb40ca66"
     ],
     "filterType": "GMObject",
     "folderName": "Crow",

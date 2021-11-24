@@ -22,7 +22,7 @@ global.graveShortcutFound = false;
 
 global.priestSlain = false;
 global.thunderManSlain = false;
-global.infernoSlain = false;
+global.blazeManSlain = false;
 global.stoneFaceSlain = false;
 
 audio_group_load(Music);
