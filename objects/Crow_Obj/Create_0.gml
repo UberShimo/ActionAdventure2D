@@ -1,6 +1,7 @@
 //Initialize
 event_inherited();
 HP = 1;
+maxHP = HP;
 Fly_up = false;
 
 alarm[0] = 120;

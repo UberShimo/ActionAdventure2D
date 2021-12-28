@@ -1,6 +1,7 @@
 //Initialize
 event_inherited();
 HP = 8;
+maxHP = HP;
 spawn = true;
 
 alarm[11] = 56;

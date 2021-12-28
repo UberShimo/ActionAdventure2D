@@ -2,22 +2,25 @@ if(!ATK && !hurt && action == "none"){
 	// Melee
 	if (x > Player_Obj.x-meleeRange && x < Player_Obj.x+meleeRange){
         ATK = true;
+		choice = irandom_range(1, 2);
             
-        if (irandom_range(0, 1) = 1){
+        if (choice == 1){
             action = "ATK1";
                 
             sprite_index = "ATK1sprite";
+			image_index = 0;
                 
             alarm[1] = 32;
-			alarm[0] = image_number;
+			alarm[0] = image_number*4;
         }
 		else{
             action = "ATK2"
                 
             sprite_index = "ATK2sprite";
+			image_index = 0;
                 
             alarm[1] = 40;
-			alarm[0] = image_number;
+			alarm[0] = image_number*4;
         }
 		// Turn correct
 		if(x < Player_Obj.x){

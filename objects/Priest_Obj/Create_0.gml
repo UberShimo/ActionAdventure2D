@@ -1,10 +1,12 @@
 //Initialize
 event_inherited();
-HP = 120;
+HP = 100;
+maxHP = HP;
 doTheRingThing = false;
 teleporting = true;
 ATK = true;
 tempImageAlpha = 1;
+hpBarWidth = 32;
 
 image_xscale = -1;
 

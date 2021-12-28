@@ -4,16 +4,7 @@
     "mvc": "1.0",
     "name": "Zombie_Hitbox_L_Obj",
     "eventList": [
-        {
-            "id": "3ac80e79-fc35-4c37-9159-f066070eee05",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "a597f864-75cc-49b1-8eaf-4d5ba5016bbb"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

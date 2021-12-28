@@ -64,7 +64,6 @@ if(left_input){
 if(down_input && !ATK && !Duck && !place_free(x, y+1)){
     Duck = true;
 	dashing = false;
-	SPD = 1;
 	sprite_index = Player_Duck_Spr;
 	
     if (facingRight){
@@ -117,11 +116,19 @@ if(jump_pressed && place_free(x, y+1) && canWallClimb){
 #endregion
 
 #region Big ass ATTACK code  0==[]::::::::::::::::::>
-if(attack_input && !ATK){
+if(attack_input){
+	attackBuffer = 4;
+}
+else if(attackBuffer > 0){
+	attackBuffer--;
+}
+
+if(attackBuffer > 0 && !ATK){
     ATK = true;
 	SPD = 0.5;
 	image_index = 0;
     
+	// NOTE: Always spawn hitbox 1 frame after strike animation appear so that you cant spawn hitbox without seeing the hit
     if(global.weapon = "sword"){
 		if(Duck){
 			sprite_index = Player_Sword_ATK_Duck_Spr;
@@ -138,7 +145,7 @@ if(attack_input && !ATK){
         }
             
         alarm[0] = image_number * 4;
-        alarm[1] = 8;
+        alarm[1] = 9; // noted
     }
     else if(global.weapon = "knife"){
         if(Duck){
@@ -162,7 +169,7 @@ if(attack_input && !ATK){
         }
             
         alarm[0] = image_number * 4;
-        alarm[1] = 4;
+        alarm[1] = 5; // noted
     }
     else if(global.weapon = "spear"){
         if(Duck){
@@ -180,7 +187,7 @@ if(attack_input && !ATK){
         }
             
         alarm[0] = image_number * 4;
-        alarm[1] = 8;
+        alarm[1] = 9; // noted
     }
     else if(global.weapon = "axe"){
         if(Duck){
@@ -198,7 +205,7 @@ if(attack_input && !ATK){
         }
             
         alarm[0] = image_number * 4;
-        alarm[1] = 24;
+        alarm[1] = 25; // noted
     }
     else if(global.weapon = "katana"){
         if(Duck){
@@ -216,7 +223,7 @@ if(attack_input && !ATK){
         }
             
         alarm[0] = image_number * 4;
-        alarm[1] = 4;
+        alarm[1] = 5; // noted
     }
     else if(global.weapon = "rapier"){
         if(Duck){
@@ -234,7 +241,7 @@ if(attack_input && !ATK){
         }
             
         alarm[0] = image_number * 4;
-        alarm[1] = 9;
+        alarm[1] = 13; // noted
     }
     else if(global.weapon = "scythe"){
         if(Duck){
@@ -252,7 +259,7 @@ if(attack_input && !ATK){
         }
             
         alarm[0] = image_number * 4;
-        alarm[1] = 16;
+        alarm[1] = 17; // noted
     }
     else if(global.weapon = "boomhammer"){
 		sprite_index = Player_BoomHammer_ATK_Spr;
@@ -266,7 +273,7 @@ if(attack_input && !ATK){
         
 		// Dont use image_number
         alarm[0] = 112;
-        alarm[1] = 48;
+        alarm[1] = 49; // noted
 		SPD = 0.2; // Real slow during boomhammering
     }
 }
@@ -278,6 +285,7 @@ if (dash_input && global.dash == 8 && !dashing && !dead &&
 	if(ATK){
 		global.dash -= 5;
 		ATK = false;
+		attackBuffer = 0;
 		Duck = false;
         alarm[0] = 0;
         alarm[1] = 0;

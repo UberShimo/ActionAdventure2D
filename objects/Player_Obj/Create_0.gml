@@ -4,6 +4,7 @@ instance_create(x, y, The_C);
 //Stats
 SPD = 1;
 ATK = false;
+attackBuffer = 0;
 Duck = false;
 canWallClimb = true;
 climbing = false;

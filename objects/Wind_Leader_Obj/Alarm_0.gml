@@ -1,0 +1,1 @@
+sprite_index = Wind_Leader_Spr;

@@ -35,6 +35,7 @@ else{
 
 //Death
 if(HP <= 0 && !hurt){
+	global.lavaSnakeSlain = true;
     instance_destroy();
 }
 

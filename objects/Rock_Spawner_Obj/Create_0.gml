@@ -1,0 +1,1 @@
+roomWidth = Pyramid_Right_Side.x - x;

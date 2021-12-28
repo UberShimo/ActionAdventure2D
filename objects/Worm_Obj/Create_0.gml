@@ -1,6 +1,7 @@
 //Initialize
 event_inherited();
 HP = 10;
+maxHP = HP;
 action = "burrow";
 alarm[1] = 1;
 

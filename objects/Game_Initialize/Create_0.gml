@@ -1,4 +1,4 @@
- global.HP = 8;
+global.HP = 8;
 global.dash = 8;
 global.hurt = false;
 global.warp = 0;
@@ -16,11 +16,13 @@ global.hasScythe = false;
 global.hasBoomHammer = false;
 
 global.forestShortcutFound = false;
-global.dungeonShortcutFound = false;
-global.graveShortcutFound = false;
 
-
+global.ghostSlain = false;
+global.trollSlain = false;
+global.golemSlain = false;
 global.priestSlain = false;
+global.lavaSnakeSlain = false;
+global.windLeaderSlain = false;
 global.thunderManSlain = false;
 global.blazeManSlain = false;
 global.stoneFaceSlain = false;

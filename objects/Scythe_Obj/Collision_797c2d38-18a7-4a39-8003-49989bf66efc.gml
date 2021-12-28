@@ -1,4 +1,5 @@
-if(place_free(x+1, y)){
+if(moves > 0){
     x += 1;
+	moves -= 1;
 }
 

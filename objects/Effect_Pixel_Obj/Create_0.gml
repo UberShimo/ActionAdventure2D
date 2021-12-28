@@ -1,1 +1,1 @@
-fadeout = 0;
+alphaFade = 0;

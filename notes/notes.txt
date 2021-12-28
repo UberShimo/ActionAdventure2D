@@ -1,37 +1,15 @@
 TODO{
-	Make entire game more crisp and cute.
+	BlazeMan just dissapears?
+	Make the nightmare and final boss.
+	Make a save point.
+	Make dream tutorial.
+	Make a cool boss finish effect and spawn texts when killing bosses and going to boss places with no boss (What am i doing here?... Lets head back home). 
 }
 
-Story: Game starts with a dream (tutorial), then you see the 3 boss faces and say "Gotta kill those bastards..." then you wake up. Kill the evil creatures to calm your land.
+Title: Quest for sleep, Lonesome adventure, Sleep quest, The good night sleep
+
+Story: Game starts with a dream (tutorial), then you see the 3 boss faces and say "Evil has spread all around my home... Gotta kill those bastards so i can finally sleep at night..." then you wake up. Kill the evil creatures to calm your land.
 After that you go to sleep and face the creator(simons face). "You have defeated your worst nightmare and can now finally rest at ease".
-
-Weapon locations:
-Sword: Start
-Knife: Hard jump in home
-Spear: Up in tree
-Axe: Behind wheat
-Katana: In grave
-Rapier: Duck (pray) in front of angel statue. Hint exist in church.
-Scythe: In ghost house
-Boomhammer:	Hidden tunnel in the dungeon
-
-
-ENEMIES
-
-Forest: Goblins(Club, Rocks), Crows, Troll, Wolves
-Abandoned house: Ghosts, Big spiders
-Mountain: Hollows(Sword, Crossbow), Golem
-Thunder mage (Boss)
-
-Church: Priest (mini boss)
-Dungeon: Giant worms (Attack from underneath), Traps, Platforming
-Lava dungeon: Lava frogs (that jumps), Big lava snake(mini boss)
-blazeMan guy (Boss)
-
-Graveyard: Skeleton, Zombies
-Ruins: Wind fighters(Shotel (attack high then low, teleport behind you), Ranger(Boomerang, Grenade))
-Desert: Wind leader(if you walk close to pyramid he teleport in front of you, throw wavy boomerang (~~~~) that goes back and forth, do 3 attacks forward)
-Pyramid: Stone face (Boss)
 
 
 BOSS MOVES:
@@ -54,15 +32,16 @@ Blazing man{
 	If he lands in lava he splash drops all over the stage and appear on the other side of stage,
 }
 Stone face{
-	Smash ground to send earth wave,
-	Stones fall from ceiling all time,
-	Smash froward (gotta duck that one)
+	Has 2 hands that does the job but also can be killed,
+	Bounce to smash ground to send earth wave,
+	Smash sideways (gotta duck that one),
+	Stones fall from ceiling all time
 }
 The creator{
 	Spawn 3 orbs that spawn from eyes and mouth. Each have a different attack and must be destroyed.
-	Orb 1: 3 projectiles that spin in circle outward
-	Orb 2: Projectiles from above and underneath
-	Orb 3: Projectile that shoot toward you then stop on repeat
+	Orb BLUE: 3 projectiles that spin in circle outward, change rotation each spawn
+	Orb RED: Projectiles from above and underneath that travel diagonally
+	Orb GREEN: Projectiles that follow you
 }
 
 BOSS QUOTES:

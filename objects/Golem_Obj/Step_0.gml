@@ -177,6 +177,7 @@ if(!ATK && !hurt){
 
 //Death
 if(HP <= 0 && !hurt){
+	global.golemSlain = true;
     instance_destroy();
 }
 

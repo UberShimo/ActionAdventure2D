@@ -25,6 +25,7 @@ else{
 
 //Death
 if(HP <= 0 && !hurt){
+	global.ghostSlain = true;
 	audio_stop_sound(Ghost_Scream_Sd);
     instance_destroy();
 }

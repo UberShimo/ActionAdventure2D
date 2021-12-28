@@ -7,6 +7,14 @@ else{
     gravity = 0;
 }
 
+// Eff
+eff = instance_create(x, y, Effect_Pixel_Obj);
+eff.image_blend = c_orange;
+eff.x += random_range(-4, 4);
+eff.vspeed = -0.1;
+eff.image_alpha = 0.5;
+eff.alphaFade = -0.01;
+
 // Sprite fix
 if(vspeed < 0){
 	sprite_index = Lava_Frog_Jump_Spr;

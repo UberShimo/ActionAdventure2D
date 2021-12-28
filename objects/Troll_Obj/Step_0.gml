@@ -202,6 +202,7 @@ if(!ATK && !hurt){
 
 //Death
 if(HP <= 0 && !hurt){
+	global.trollSlain = true;
 	audio_stop_sound(AUUU_Sd);
     instance_destroy();
 }

@@ -1,4 +1,4 @@
-if(instance_number(Web_Hit_Obj) = 0 && random_range(0, 3) < 1){
+if(instance_number(Web_Hit_Obj) = 0 && random_range(0, 3) < 1 && place_free(x, y,)){
     ATK = true;
     
     if (x < Player_Obj.x)
