@@ -6,8 +6,8 @@ if(other.object_index != Zombie_Obj
 && other.object_index != Stone_Hand_R_Obj
 && other.object_index != Stone_Hand_L_Obj
 && other.object_index != Blue_Simon_Obj
-&& other.object_index != Stone_Hand_L_Obj
-&& other.object_index != Stone_Hand_L_Obj){
+&& other.object_index != Red_Simon_Obj
+&& other.object_index != Green_Simon_Obj){
 	// Anti Dash
     if(dashing){
         if(facingRight){

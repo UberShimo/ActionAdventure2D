@@ -10,6 +10,7 @@ instance_create_depth(x, y, 0, Blaze_Man_LavaDrop_Obj);
 
 x = 0;
 y = 0;
+hspeed = 0;
 
 alarm[0] = 0;
 alarm[1] = 120;

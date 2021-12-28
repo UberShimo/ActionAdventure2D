@@ -1,6 +1,4 @@
 TODO{
-	BlazeMan just dissapears?
-	Make the nightmare and final boss.
 	Make a save point.
 	Make dream tutorial.
 	Make a cool boss finish effect and spawn texts when killing bosses and going to boss places with no boss (What am i doing here?... Lets head back home). 
@@ -48,3 +46,7 @@ BOSS QUOTES:
 Thunder mage: Jelous of my age? You should be... Even if you kill me now... You will suffer knowing a bastard like me has lived a good life for 102 years! AHAHAHAHA
 blazeMan guy: Oh ohhhh... Nerd alert... (Player: HOW DARE YOU!?)
 Stone face: Free you mind from violence. And let me beat you up.
+
+
+Random shit:
+Sista boss tog sen kl 9 ish till kl 15 ish att göra men jag satt avslappnat o arbeta. Alla sprites var redan klara. Jag åt middag o gosa med katt o lyssna på musik. 6 timmar e la rätt rimligt när man segar :P
