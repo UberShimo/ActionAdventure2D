@@ -24,7 +24,7 @@ if(!ATK && !hurt && action == "none"){
 	        sprite_index = Wind_Fighter_H_ATK_Spr;
 			image_index = 0;
                 
-	        alarm[1] = 40;
+	        alarm[1] = 48;
 			alarm[0] = image_number*4;
         }
 		else{
@@ -33,7 +33,7 @@ if(!ATK && !hurt && action == "none"){
 	        sprite_index = Wind_Fighter_L_ATK_Spr;
 			image_index = 0;
             
-	        alarm[1] = 40;
+	        alarm[1] = 48;
 			alarm[0] = image_number*4;
 		}
 		// Turn correct

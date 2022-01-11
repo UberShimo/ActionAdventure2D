@@ -1,14 +1,14 @@
 if(Player_Obj.check_pressed && place_meeting(x, y, Player_Obj) && !Player_Obj.ATK){
     global.warp = 0;
-    if(Player_Obj.facingRight){
-        global.warpFacingRight = true;
-    }
-    else{
-        global.warpFacingRight = false;
-    }
+	global.isControllable = false;
+	global.blackScreen = BLACK_SCREEN_Spr;
 	
-	audio_play_sound(PickUp_Sd, 0, false);
-    
-    room_goto(Nightmare);
+	Hud_Fix_Obj.alarm[1] = 120;
+	Player_Obj.alarm[8] = 300;
+	
+	Player_Obj.sprite_index = Player_Sleep_Spr;
+	Player_Obj.image_xscale = 1;
+	
+	audio_stop_all();
 }
 

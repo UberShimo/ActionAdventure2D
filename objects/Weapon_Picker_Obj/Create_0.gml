@@ -6,6 +6,8 @@ instance_create_depth(0, 0, -900, Inventory_Frame_Obj);
 extraX = -24*4;
 extraY = 0;
 
+description = Nothing_Spr;
+
 // Spawn aviable weapons
 if(global.hasSword){
 	instance_create_depth(0, 0, -1000, Sword_UI_Obj);

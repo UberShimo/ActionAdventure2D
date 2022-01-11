@@ -15,4 +15,4 @@ hpBarHeight = 24;
 depth = 10;
 gravity = 0;
 gravity_direction = -90;
-alarm[1] = irandom_range(120, 180);
+alarm[1] = 360 + irandom_range(120, 180);

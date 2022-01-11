@@ -6,7 +6,6 @@
     "children": [
         "100eaa81-67f3-41d2-bc95-eb786d92bcfa",
         "9fe969e7-e246-4380-9cd8-6d9134457767",
-        "a265034d-663f-4cdf-954f-f2d4060dcdd3",
         "7b0f6979-98a3-470c-8ab4-e364405622e6",
         "3f4a799f-d3fb-4a6e-aaf8-28ff93d57eee",
         "5a29330b-646e-4089-9add-cb4f6f836b1c",
@@ -18,7 +17,15 @@
         "3abe41dc-f023-4f79-ab8c-3de07b64884c",
         "51a05033-1663-49db-9043-727b8b48470f",
         "f9be1f7c-bcf0-4b6e-b7e7-ff1ee9cb9889",
-        "81afd2e5-439a-4fc0-ad63-e846b81a86df"
+        "81afd2e5-439a-4fc0-ad63-e846b81a86df",
+        "d4db4db1-dbba-49d9-92fa-045ce9addeb9",
+        "41d8fa23-4ef2-4811-b748-51b3b35f95db",
+        "f8e10675-214a-4416-a72b-bd0038337355",
+        "f540dedd-026b-4e24-8e61-025f111c0e54",
+        "9de05336-886f-4f26-abf0-1dc533ff22b7",
+        "e04f4f8a-07d4-4229-9733-4a120d76b9aa",
+        "f78b0e9b-b296-49b1-aa82-828255e87987",
+        "28b10d7e-a738-46d5-975c-b61727ca5b2b"
     ],
     "filterType": "GMObject",
     "folderName": "Worldly stuff",

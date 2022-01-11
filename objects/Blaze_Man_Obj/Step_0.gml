@@ -80,7 +80,30 @@ else{
 
 // Die
 if(HP <= 0 && !hurt){
-	global.blazeManSlain = true;
+	global.isControllable = false;
+    global.blazeManSlain = true;
+	global.blackScreen2 = Lets_Head_Home_Dialogue_Spr;
+	
+	if(global.thunderManSlain && global.stoneFaceSlain){
+		global.blackScreen = All_Bastards_Dead_Dialogue_Spr;
+		global.blackScreen2 = Finally_Rest_Dialogue_Spr;
+	}
+	else if(global.thunderManSlain || global.stoneFaceSlain){
+		global.blackScreen = One_Bastard_Left_Dialogue_Spr;
+	}
+	else{
+		global.blackScreen = Two_Bastards_Left_Dialogue_Spr;
+	}
+	Hud_Fix_Obj.alarm[1] = 120;
+	Hud_Fix_Obj.alarm[2] = 420;
+	Player_Obj.alarm[7] = 420;
+	
+	audio_stop_all();
+	audio_play_sound(Victory_Sd, 1, false);
+	
+	instance_destroy(Blaze_Man_Fireball_Obj);
+	instance_destroy(Blaze_Man_LavaDrop_Obj);
+	instance_destroy(Big_Blaze_Obj);
     instance_destroy();
 }
 

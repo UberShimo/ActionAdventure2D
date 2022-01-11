@@ -1,7 +1,7 @@
 if(activated){
 	direction -= 1.2*speed;
 
-	if(speed < 1){
+	if(speed < 0.5){
 		speed += 0.01;
 	}
 
@@ -19,7 +19,7 @@ if(activated){
 
 // Spawn orbs
 if(spawnOrbs){
-	instance_create_depth(x, y, 10, Blue_Orb_Spawner_Obj);
+	instance_create_depth(x, y, 2, Blue_Orb_Spawner_Obj);
 	orbRotaion = -orbRotaion;
 	spawnOrbs = false;
 }
@@ -27,5 +27,6 @@ if(spawnOrbs){
 if(HP <= 0 && !hurt){
 	Nightmare_Controller_Obj.existingSimons--;
     instance_destroy(Blue_Orb_Spawner_Obj);
+	instance_destroy(Blue_Orb_Obj);
     instance_destroy();
 }

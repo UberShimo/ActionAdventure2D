@@ -1,4 +1,4 @@
 event_inherited();
 
-dmg = 2;
+dmg = 3;
 stun = 4;

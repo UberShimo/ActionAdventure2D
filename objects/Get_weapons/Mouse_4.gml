@@ -7,3 +7,6 @@ global.hasRapier = true;
 global.hasScythe = true;
 global.hasBoomHammer = true;
 
+global.thunderManSlain = true;
+global.blazeManSlain = true;
+global.stoneFaceSlain = true;

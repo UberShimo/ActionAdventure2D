@@ -5,3 +5,4 @@ HP = 16;
 maxHP = HP;
 hurt = false;
 splatColor = c_white;
+hpBarHeight = 12;

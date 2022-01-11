@@ -1,5 +1,5 @@
 event_inherited();
 
 projectile = true;
-gravity = 0.05;
+gravity = 0.025;
 depth = -1;

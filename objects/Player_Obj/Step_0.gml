@@ -1,5 +1,5 @@
 // ------ INPUT ------ //
-
+if(global.isControllable){
 
 // ACTIONS
 
@@ -73,8 +73,9 @@ if(down_input && !ATK && !Duck && !place_free(x, y+1)){
         image_xscale = -1;
     }
 }
-else if(!down_input){
+else if(!down_input && !ATK && Duck){
 	Duck = false;
+	SPD = 1;
 }
 
 //Jump
@@ -125,6 +126,7 @@ else if(attackBuffer > 0){
 
 if(attackBuffer > 0 && !ATK){
     ATK = true;
+	dashing = false;
 	SPD = 0.5;
 	image_index = 0;
     
@@ -167,7 +169,8 @@ if(attackBuffer > 0 && !ATK){
         else{
 			image_xscale = -1;
         }
-            
+        
+		SPD = 1; // Fast with knife
         alarm[0] = image_number * 4;
         alarm[1] = 5; // noted
     }
@@ -274,7 +277,6 @@ if(attackBuffer > 0 && !ATK){
 		// Dont use image_number
         alarm[0] = 112;
         alarm[1] = 49; // noted
-		SPD = 0.2; // Real slow during boomhammering
     }
 }
 #endregion
@@ -283,8 +285,9 @@ if(attackBuffer > 0 && !ATK){
 if (dash_input && global.dash == 8 && !dashing && !dead &&
 !((global.weapon == "boomhammer") && ATK)){ // cant dash during boomhammer attack
 	if(ATK){
-		global.dash -= 5;
-		ATK = false;
+		if(global.weapon != "knife"){ // Knife has no attack cancel penalty
+			global.dash -= 5;
+		}
 		attackBuffer = 0;
 		Duck = false;
         alarm[0] = 0;
@@ -306,6 +309,7 @@ if (dash_input && global.dash == 8 && !dashing && !dead &&
 			sprite_index = Player_Spr;
 		}
 	}
+	ATK = false;
     SPD = 4;
     dashing = true;
 }
@@ -314,6 +318,7 @@ else if((!dash_input && dashing) || global.dash < 1){
 	dashing = false;
 	SPD = 1;
 }
+
 // Dash cooldown eff
 if(spawnDashCooldownEff && global.dash == 8){
 	audio_play_sound(Dash_Cooldown_Sd, 0, false);
@@ -324,12 +329,18 @@ else if(dashing){
 	if(irandom_range(1, 3) == 1){
 		dashEffSpawnY = irandom_range(-2, 4);
 	}
-    global.dash -= 0.5;
-    instance_create_depth(x, y+dashEffSpawnY, -5, Dash_Eff_Obj);
+	global.dash -= 0.5;
+	instance_create_depth(x, y+dashEffSpawnY, -5, Dash_Eff_Obj);
 	spawnDashCooldownEff = true;
 }
 else if(global.dash < 8){
     global.dash += 0.1;
+	if(global.weapon == "rapier"){ // Rapier gives extra energy!
+		global.dash += 0.1;
+	}
+	if(global.dash > 8){
+		global.dash = 8;
+	}
 }
 #endregion
 
@@ -345,6 +356,15 @@ if(inventory_input){
 	global.inventoryIsOpen = !global.inventoryIsOpen;
 }
 
+// Go to menu
+if(pause_input){
+	game_save("save.dat");
+	ini_open("music.ini");
+	ini_write_real("song", "value", global.currentMusic);
+	ini_close();
+	room_goto(Start_Menu);
+}
+
 // Reset sprite
 if (!right_input && !left_input && !ATK && !Duck && !climbing){
 	sprite_index = Player_Spr;
@@ -354,22 +374,6 @@ if (!right_input && !left_input && !ATK && !Duck && !climbing){
 	else{
 		image_xscale = -1;
 	}
-}
-
-
-// Gravity
-if(place_free(x, y+1)){
-	if(vspeed > -1 && vspeed < 1){
-		gravity = 0.1;
-	}
-	else{
-		gravity = 0.25;
-	}
-    
-    gravity_direction = -90;
-}
-else{
-    gravity = 0;
 }
 
 // Blood effect
@@ -395,6 +399,8 @@ else{
     The_C.visible = false;
 }
 
+} // Controllable end
+
 // Dead
 if(global.HP <= 0 && !dead){
     ATK = true;
@@ -410,5 +416,24 @@ if(global.HP <= 0 && !dead){
     }
     
     alarm[0] = 0;
+	alarm[1] = 0;
     alarm[11] = 60;
+}
+else if(global.HP < 0){	// So that HP bar wont fuck up when dead
+	global.HP = 0;
+}
+
+// Gravity
+if(place_free(x, y+1)){
+	if(vspeed > -1 && vspeed < 1){
+		gravity = 0.1;
+	}
+	else{
+		gravity = 0.25;
+	}
+    
+    gravity_direction = -90;
+}
+else{
+    gravity = 0;
 }

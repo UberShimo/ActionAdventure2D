@@ -16,4 +16,4 @@ depth = 10;
 image_xscale = -1;
 gravity = 0;
 gravity_direction = -90;
-alarm[1] = irandom_range(240, 300);
+alarm[1] = 360 + irandom_range(240, 300);

@@ -1,0 +1,30 @@
+{
+    "id": "16b24680-84ea-4b4e-b108-ba1e90bc9373",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "16b24680-84ea-4b4e-b108-ba1e90bc9373",
+    "children": [
+        "5c54cc95-c28c-42e7-96cd-2d83d159ee78",
+        "8f84fef0-77d4-43ba-90b6-af7990b95c37",
+        "6aff3551-b589-4e62-8c7e-1cf5e8128c70",
+        "952fcd50-e688-4067-9acc-f9303fd0ed64",
+        "d0714d1d-7f71-499c-84c6-a631378959d8",
+        "5ff8d2a8-ca7e-4e8b-9d61-30af6b7bcbeb",
+        "454634ad-c8ce-4d11-a974-193ca59621ab",
+        "20ec88ec-22ca-4760-8f6b-c67805754b8c",
+        "5dbae0ca-0dfc-4258-b524-77b63645d33f",
+        "4087ab98-ada0-49a8-8832-a608b92bff3e",
+        "06b5be55-8d48-4d98-89ab-dc75b33b0588",
+        "a71b7c16-c943-43fa-b2e1-68964d55aea3",
+        "353ff496-e146-4a32-9b9e-fb57c14fd7f6",
+        "5511fc17-3cb5-45ae-834b-e3dcbab9ee0f",
+        "1a495744-246e-4d07-840a-7404112ddd34",
+        "65e7d31a-fa47-4325-bc92-a814fe6cefb2",
+        "aabf8568-bed8-4216-b4b5-f11093d08a46",
+        "7622c0a8-b983-4699-a138-e2083fd49241"
+    ],
+    "filterType": "GMSprite",
+    "folderName": "dialogues",
+    "isDefaultView": false,
+    "localisedFolderName": ""
+}

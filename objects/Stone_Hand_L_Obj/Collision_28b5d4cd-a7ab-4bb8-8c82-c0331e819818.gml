@@ -10,6 +10,7 @@ if(action == "punch"){
 else if(action == "charge"){
 	hspeed = 0;
 	vspeed = 0;
+	y = Pyramid_Left_Side.y-4;
 }
 else{
 	hspeed = 0;

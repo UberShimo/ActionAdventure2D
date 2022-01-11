@@ -8,7 +8,7 @@ else{
 }
 
 // Eff
-eff = instance_create(x, y, Effect_Pixel_Obj);
+eff = instance_create(x, y+4, Effect_Pixel_Obj);
 eff.image_blend = c_orange;
 eff.x += random_range(-4, 4);
 eff.vspeed = -0.1;

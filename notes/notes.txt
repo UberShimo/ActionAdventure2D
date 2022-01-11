@@ -1,52 +1,19 @@
 TODO{
-	Make a save point.
-	Make dream tutorial.
-	Make a cool boss finish effect and spawn texts when killing bosses and going to boss places with no boss (What am i doing here?... Lets head back home). 
+	Make a script for playing music instead?
+	Make single weapon mode?
+	Make hard mode?
+	Make achievments?
 }
+Title: Quest for sleep
 
-Title: Quest for sleep, Lonesome adventure, Sleep quest, The good night sleep
-
-Story: Game starts with a dream (tutorial), then you see the 3 boss faces and say "Evil has spread all around my home... Gotta kill those bastards so i can finally sleep at night..." then you wake up. Kill the evil creatures to calm your land.
-After that you go to sleep and face the creator(simons face). "You have defeated your worst nightmare and can now finally rest at ease".
-
-
-BOSS MOVES:
-Thunder mage{
-	Fly for a time then get exhausted
-	Spinning bolts
-	Summon lightning strikes
-}
-Priest{
-	Teleport,
-	Creates light walls that you cant pass through until Priest is dead,
-	Create lights at random locations that shoot toward player,
-	Shoot out bouncing spell that bounce around in room
-}
-Blazing man{
-	Deals dmg on touch and walk almost all time,
-	Spin jump and spawn 3 fireballs that shoots after long random delay
-	Run toward you fast then jump into lava,
-	Flame sword close then far away,
-	If he lands in lava he splash drops all over the stage and appear on the other side of stage,
-}
-Stone face{
-	Has 2 hands that does the job but also can be killed,
-	Bounce to smash ground to send earth wave,
-	Smash sideways (gotta duck that one),
-	Stones fall from ceiling all time
-}
-The creator{
-	Spawn 3 orbs that spawn from eyes and mouth. Each have a different attack and must be destroyed.
-	Orb BLUE: 3 projectiles that spin in circle outward, change rotation each spawn
-	Orb RED: Projectiles from above and underneath that travel diagonally
-	Orb GREEN: Projectiles that follow you
-}
-
-BOSS QUOTES:
-Thunder mage: Jelous of my age? You should be... Even if you kill me now... You will suffer knowing a bastard like me has lived a good life for 102 years! AHAHAHAHA
-blazeMan guy: Oh ohhhh... Nerd alert... (Player: HOW DARE YOU!?)
-Stone face: Free you mind from violence. And let me beat you up.
-
+achievments:
+beat the game
+beat game on hard mode
+beat the game under 10 minutes
+beat game without taking damage
+Beat the game on hard mode without taking damage under 10 minutes.
+Find all weapons
+beat game on Sword/Knife/Spear/Axe/Katana/Rapier/Scythe/BoomHammer only mode
 
 Random shit:
 Sista boss tog sen kl 9 ish till kl 15 ish att göra men jag satt avslappnat o arbeta. Alla sprites var redan klara. Jag åt middag o gosa med katt o lyssna på musik. 6 timmar e la rätt rimligt när man segar :P

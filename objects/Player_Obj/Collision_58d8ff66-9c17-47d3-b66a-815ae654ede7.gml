@@ -1,4 +1,5 @@
 if(other.object_index != Zombie_Obj
+&& other.object_index != Punch_Sack_Obj
 && other.object_index != Wind_Ranger_Obj
 && other.object_index != Smoke_Plant_Obj
 && other.object_index != Special_Smoke_Plant_Obj

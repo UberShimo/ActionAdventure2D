@@ -40,6 +40,9 @@ else if(image_alpha < 1){
 if(HP <= 0 && !hurt){
 	global.priestSlain = true;
 	instance_destroy(PriestWall_Obj);
+	instance_destroy(PriestRing_Obj);
+	instance_destroy(PriestStarSpawn_Obj);
+	instance_destroy(PriestStar_Obj);
     instance_destroy();
 }
 

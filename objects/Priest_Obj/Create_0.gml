@@ -1,6 +1,6 @@
 //Initialize
 event_inherited();
-HP = 100;
+HP = 80;
 maxHP = HP;
 doTheRingThing = false;
 teleporting = true;

@@ -9,6 +9,7 @@ activated = false;
 spawnOrbs = false;
 orbRotaion = 3;
 
-depth = 1;
+vspeed = -0.2;
+depth = 5;
 image_alpha = 0.3;
-alarm[9] = 260;
+alarm[9] = 360+460;

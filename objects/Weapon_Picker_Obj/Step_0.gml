@@ -47,3 +47,32 @@ if(pickWeapon_input){
 	}
 	// inventoryIsOpen variable is handled only by Player_obj
 }
+
+// Draw descriptions
+if(place_meeting(x, y, Sword_UI_Obj)){
+	description = Sword_Description_Spr;
+}
+else if(place_meeting(x, y, Knife_UI_Obj)){
+	description = Knife_Description_Spr;
+}
+else if(place_meeting(x, y, Spear_UI_Obj)){
+	description = Spear_Description_Spr;
+}
+else if(place_meeting(x, y, Axe_UI_Obj)){
+	description = Axe_Description_Spr;
+}
+else if(place_meeting(x, y, Katana_UI_Obj)){
+	description = Katana_Description_Spr;
+}
+else if(place_meeting(x, y, Rapier_UI_Obj)){
+	description = Rapier_Description_Spr;
+}
+else if(place_meeting(x, y, Scythe_UI_Obj)){
+	description = Scythe_Description_Spr;
+}
+else if(place_meeting(x, y, BoomHammer_UI_Obj)){
+	description = BoomHammer_Description_Spr;
+}
+else{
+	description = Nothing_Spr;
+}

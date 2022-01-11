@@ -15,7 +15,7 @@ if(Player_Obj.check_pressed && place_meeting(x, y, Player_Obj) && !Player_Obj.AT
     else if(room = Home){
         room_goto(World);
     }
-	// This is a special case 
+	// special case
     else if(room = Mauntain){
         room_goto(MauntainTop);
 		global.warp = 0;

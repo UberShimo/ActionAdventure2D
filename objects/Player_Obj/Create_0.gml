@@ -1,7 +1,7 @@
-//Create the C!
+// Create the C!
 instance_create(x, y, The_C);
 
-//Stats
+// Stats
 SPD = 1;
 ATK = false;
 attackBuffer = 0;
@@ -22,7 +22,7 @@ else{
 	spawnDashCooldownEff = false;
 }
 
-//Fix sprite
+// Fix sprite
 sprite_index = Player_Spr;
 depth = 0;
 
@@ -35,7 +35,7 @@ else{
     image_xscale = -1;
 }
 
-//Warp
+// Warp
 if(global.warp = 1){
     x = Warp1_Obj.x;
     y = Warp1_Obj.y;
