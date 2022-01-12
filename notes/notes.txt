@@ -1,4 +1,5 @@
 TODO{
+	Flying off stage with thunder boss looks ugly.
 	Make a script for playing music instead?
 	Make single weapon mode?
 	Make hard mode?
@@ -14,6 +15,10 @@ beat game without taking damage
 Beat the game on hard mode without taking damage under 10 minutes.
 Find all weapons
 beat game on Sword/Knife/Spear/Axe/Katana/Rapier/Scythe/BoomHammer only mode
+
+Playtesters:
+Charlotte Nilsson
+Lucas Dahlén Sjöstedt
 
 Random shit:
 Sista boss tog sen kl 9 ish till kl 15 ish att göra men jag satt avslappnat o arbeta. Alla sprites var redan klara. Jag åt middag o gosa med katt o lyssna på musik. 6 timmar e la rätt rimligt när man segar :P

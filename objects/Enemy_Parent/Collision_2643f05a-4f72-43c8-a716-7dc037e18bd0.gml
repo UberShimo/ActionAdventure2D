@@ -10,6 +10,11 @@ if(!hurt || other.object_index == ScytheGhost_ATK_Hitbox){ // GhostScythe hitbox
 	if(HP <= 0){
 		eff = instance_create_depth(x, y, 1, Splat_Eff_Obj);
 		eff.image_blend = splatColor;
+		// Kill hitbox alarms
+		alarm[1] = 0;
+		alarm[2] = 0;
+		alarm[3] = 0;
+		alarm[4] = 0;
 	}
 }
 

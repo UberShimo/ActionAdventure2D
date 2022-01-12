@@ -5,4 +5,4 @@ projectile = true;
 depth = -10;
 
 alarm[0] = 4;
-alarm[1] = 180;
+alarm[1] = 240;

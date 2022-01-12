@@ -38,8 +38,8 @@ else if(action == "atk"){
 	image_alpha = 1;
 	
 	hitbox = instance_create(x, y-4, Wind_Ring_Obj);
-	hitbox.hspeed = 4*image_xscale;
-	hitbox.hSpeedChange = -0.05*image_xscale;
+	hitbox.hspeed = 2.5*image_xscale;
+	hitbox.hSpeedChange = -0.025*image_xscale;
 	
 	audio_play_sound(Slash_Sd, 0, false);
 }
