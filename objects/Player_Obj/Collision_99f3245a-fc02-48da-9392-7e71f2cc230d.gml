@@ -1,7 +1,7 @@
 if (!global.hurt && !dead){
     global.HP -= 1;
     global.hurt = true;
-    SPD = 0;
+    SPD = 0.25;
 
     if(facingRight){
         hspeed = -1;

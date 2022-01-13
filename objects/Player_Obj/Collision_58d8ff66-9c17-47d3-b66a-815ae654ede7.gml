@@ -20,14 +20,13 @@ if(other.object_index != Zombie_Obj
     }
     
     dashing = false;
-    SPD = 0;
+    SPD = 0.25;
     
     if(x < other.x){
         hspeed = -1;
-        vspeed = -1;
     }
     else{
         hspeed = 1;
-        vspeed = -1;
     }
+    vspeed = -1.5;
 }

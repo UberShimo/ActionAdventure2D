@@ -2551,6 +2551,14 @@
             }
         },
         {
+            "Key": "576ff9f7-67b2-4fea-9984-093e194d5a57",
+            "Value": {
+                "id": "f3d5de28-c5e5-4e88-80b2-986d751fe88d",
+                "resourcePath": "sprites\\Deletes_Old_Save_Spr\\Deletes_Old_Save_Spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "578de98d-dc3b-42cd-a70e-92c0dc87e7d3",
             "Value": {
                 "id": "84ada6cc-931d-49fa-a749-035f1840c25a",
@@ -2724,6 +2732,14 @@
                 "id": "888dc1a6-00bd-496c-859a-251f48018138",
                 "resourcePath": "sprites\\BLACK_SCREEN_Spr\\BLACK_SCREEN_Spr.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5e9e1368-f868-41ae-9125-1626795a7c3f",
+            "Value": {
+                "id": "8e320ce2-0a64-4c1c-bced-453f611d7d49",
+                "resourcePath": "objects\\Deletes_Old_Save_Obj\\Deletes_Old_Save_Obj.yy",
+                "resourceType": "GMObject"
             }
         },
         {

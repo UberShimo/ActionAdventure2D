@@ -10,7 +10,7 @@ if(!global.hurt){
 	}
     
 	dashing = false;
-	SPD = 0;
+    SPD = 0.25;
 	global.HP -= 1;
 	global.hurt = true;
 	alarm[2] = 8;

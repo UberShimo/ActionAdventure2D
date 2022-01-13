@@ -10,17 +10,17 @@ if(!global.hurt){
 	}
     
 	dashing = false;
-	SPD = 0;
+    SPD = 0.25;
 	global.HP -= 1;
 	global.hurt = true;
 	alarm[2] = 8;
     
 	if(x < other.x){
-	    hspeed = -1;
-	    vspeed = -1;
+	    hspeed = -0.5;
+	    vspeed = -0.5;
 	}
 	else{
-	    hspeed = 1;
-	    vspeed = -1;
+	    hspeed = 0.5;
+	    vspeed = -0.5;
 	}
 }

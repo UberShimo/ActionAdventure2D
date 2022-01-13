@@ -31,6 +31,15 @@ if(!ATK && !hurt){
     }
 }
 
+// Eff
+eff = instance_create(x, y+2, Effect_Pixel_Obj);
+eff.image_blend = c_orange;
+eff.x += random_range(-4, 4);
+eff.y += random_range(-4, 4);
+eff.vspeed = -0.1;
+eff.image_alpha = 0.5;
+eff.alphaFade = -0.01;
+
 // Spin
 if(action == "flippin"){
 	if(image_xscale > 0){
