@@ -6311,6 +6311,14 @@
             }
         },
         {
+            "Key": "e7163c4e-ef70-4945-9611-77e06534abb2",
+            "Value": {
+                "id": "7294ed18-b1ee-4887-aebb-6cc0e4171548",
+                "resourcePath": "sprites\\ICON_IMAGE\\ICON_IMAGE.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e723abb5-c0a4-403c-ab91-16417bf05b73",
             "Value": {
                 "id": "d7be5af3-3b54-4a66-80ba-eee29f8cc2c1",
