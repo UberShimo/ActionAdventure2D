@@ -285,8 +285,9 @@ if(attackBuffer > 0 && !ATK){
 if (dash_input && global.dash == 8 && !dashing && !dead &&
 !((global.weapon == "boomhammer") && ATK)){ // cant dash during boomhammer attack
 	if(ATK){
-		if(global.weapon != "knife"){ // Knife has no attack cancel penalty
-			global.dash -= 5;
+		global.dash -= 5;
+		if(global.weapon == "knife"){ // Knife has much less attack cancel penalty
+			global.dash += 4;
 		}
 		attackBuffer = 0;
 		Duck = false;

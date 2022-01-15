@@ -45,8 +45,8 @@
             ]
         }
     ],
-    "gridX": 0,
-    "gridY": 0,
+    "gridX": 16,
+    "gridY": 8,
     "height": 160,
     "layers": [
         {

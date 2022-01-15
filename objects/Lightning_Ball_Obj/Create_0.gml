@@ -7,6 +7,7 @@ else if(instance_number(Lightning_Ball_Obj) = 2){
     direction += 240;
 }
 
+stun = 24;
 vLaunch = 1;
 hLaunch = 0;
 projectile = true;

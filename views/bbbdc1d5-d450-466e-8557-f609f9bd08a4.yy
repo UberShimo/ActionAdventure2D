@@ -10,7 +10,8 @@
         "1a36db2e-48e0-490a-9ffe-c7de6f973fee",
         "13159bec-9785-44d3-9edb-0564b4840ddf",
         "8633097e-818d-408c-aed5-64d762bfd5ae",
-        "c9beac0e-aed8-4125-af2b-38a78f168dcf"
+        "c9beac0e-aed8-4125-af2b-38a78f168dcf",
+        "d00c3e31-9009-4f12-b4d1-190a02bad14e"
     ],
     "filterType": "GMSprite",
     "folderName": "Thunder Man",

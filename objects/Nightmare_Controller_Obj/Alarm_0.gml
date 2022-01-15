@@ -36,4 +36,7 @@ else if(turn == "green"){
 	}
 }
 
-alarm[0] = 120*(existingSimons/2);
+alarm[0] = 90+((existingSimons-1)*45);
+// 3 simon = 90 + 2*45 = 90 + 90	= 180
+// 2 simon = 90 + 1*45 = 90 + 45	= 135
+// 1 simon = 90 + 0*45 = 90 + 0		= 90

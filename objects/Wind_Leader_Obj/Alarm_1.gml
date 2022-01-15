@@ -12,6 +12,7 @@ else if(action == "2"){
 	action = "3";
 	gravity = 0;
 	sprite_index = Wind_Leader_Throw_Spr;
+	image_index = 0;
 	
 	// Left
 	if(irandom_range(1, 2) == 1){

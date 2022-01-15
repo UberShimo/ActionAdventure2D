@@ -1,5 +1,5 @@
 if(global.currentMusic != Home_Mu){
-	audio_sound_gain(global.currentMusic, 0, 100);
+	audio_sound_gain(global.currentMusic, 0, 2000);
 	global.currentMusic = Home_Mu;
 	
 	if(!audio_is_playing(global.currentMusic)){

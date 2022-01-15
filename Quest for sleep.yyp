@@ -1831,6 +1831,14 @@
             }
         },
         {
+            "Key": "3c4a0472-584b-457d-85bd-2c08e6ed8883",
+            "Value": {
+                "id": "a2f8c4ad-12b2-4696-af2d-faf837b369cf",
+                "resourcePath": "objects\\Mauntain_Cloud_Obj\\Mauntain_Cloud_Obj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3c731a52-30ad-4095-b608-23bca62c79be",
             "Value": {
                 "id": "d4e0972f-b404-44b0-92f2-02d79fd12a8b",
@@ -4551,6 +4559,14 @@
             }
         },
         {
+            "Key": "9e21dcd2-778a-4f1b-bb42-3838bf609095",
+            "Value": {
+                "id": "68715622-5535-4642-843e-4d261d0f5d9f",
+                "resourcePath": "objects\\Mauntain_Cloud_Spawner\\Mauntain_Cloud_Spawner.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9e67ea73-0fe6-48a3-9836-910b493ef8fe",
             "Value": {
                 "id": "2821bea7-9e73-4b65-8977-d5bb76b395da",
@@ -5716,6 +5732,14 @@
                 "id": "dbb7fe11-6e75-4531-a474-0ac9ab8ae831",
                 "resourcePath": "objects\\Stone_Eff_Obj\\Stone_Eff_Obj.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d00c3e31-9009-4f12-b4d1-190a02bad14e",
+            "Value": {
+                "id": "f99295ad-95df-44fd-879c-e8ca074251f0",
+                "resourcePath": "sprites\\Mauntain_Cloud_Spr\\Mauntain_Cloud_Spr.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
