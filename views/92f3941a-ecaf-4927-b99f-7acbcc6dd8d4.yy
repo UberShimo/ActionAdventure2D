@@ -23,9 +23,7 @@
         "f8e10675-214a-4416-a72b-bd0038337355",
         "f540dedd-026b-4e24-8e61-025f111c0e54",
         "9de05336-886f-4f26-abf0-1dc533ff22b7",
-        "e04f4f8a-07d4-4229-9733-4a120d76b9aa",
-        "f78b0e9b-b296-49b1-aa82-828255e87987",
-        "28b10d7e-a738-46d5-975c-b61727ca5b2b"
+        "e04f4f8a-07d4-4229-9733-4a120d76b9aa"
     ],
     "filterType": "GMObject",
     "folderName": "Worldly stuff",

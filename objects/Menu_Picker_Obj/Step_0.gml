@@ -67,17 +67,7 @@ if(choose_input){
 		ini_close();
 
 		if(global.currentMusic != song){
-			audio_sound_gain(global.currentMusic, 0, 100);
-			global.currentMusic = song;
-	
-			if(!audio_is_playing(global.currentMusic)){
-				audio_play_sound(global.currentMusic, 1, true);
-			}
-			ini_open("music.ini");
-			vol = ini_read_real("volume", "value", 0);
-			ini_close();
-	
-			audio_sound_gain(global.currentMusic, 0.3*vol, 2000);
+			Play_Song(song);
 		}
 		game_load("save.dat");
 	}
@@ -103,17 +93,7 @@ if((keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(0, gp_star
 	ini_close();
 
 	if(global.currentMusic != song){
-		audio_sound_gain(global.currentMusic, 0, 100);
-		global.currentMusic = song;
-	
-		if(!audio_is_playing(global.currentMusic)){
-			audio_play_sound(global.currentMusic, 1, true);
-		}
-		ini_open("music.ini");
-		vol = ini_read_real("volume", "value", 0);
-		ini_close();
-	
-		audio_sound_gain(global.currentMusic, 0.3*vol, 2000);
+		Play_Song(song);
 	}
 	game_load("save.dat");
 }
@@ -125,18 +105,20 @@ if(place_meeting(x, y, Menu_Music_Obj)){
 	if(right_pressed){
 		value = ini_read_real("volume", "value", 0);
 		if(value < 1){
-			value = value+0.1;
+			value += 0.1;
 			ini_write_real("volume", "value", value);
 		}
-		audio_sound_gain(global.currentMusic, 0.1*value, 10);
+		properVolume = value * Get_Song_Volume(global.currentMusic);
+		audio_sound_gain(global.currentMusic, properVolume, 10);
 	}
 	else if(left_pressed){
 		value = ini_read_real("volume", "value", 0);
 		if(value > 0){
-			value = value-0.1;
+			value -= 0.1;
 			ini_write_real("volume", "value", value);
 		}
-		audio_sound_gain(global.currentMusic, 0.1*value, 10);
+		properVolume = value * Get_Song_Volume(global.currentMusic);
+		audio_sound_gain(global.currentMusic, properVolume, 10);
 	}
 	ini_close();
 }

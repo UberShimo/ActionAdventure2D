@@ -1,6 +1,4 @@
 TODO{
-	Make house decoration part of tileset instead of object?
-	Make a script for playing music instead?
 	Make single weapon mode?
 	Make hard mode?
 	Make achievments?

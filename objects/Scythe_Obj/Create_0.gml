@@ -2,4 +2,4 @@ if(global.hasScythe){
     instance_destroy();
 }
 
-moves = 32;
+moves = 24;
