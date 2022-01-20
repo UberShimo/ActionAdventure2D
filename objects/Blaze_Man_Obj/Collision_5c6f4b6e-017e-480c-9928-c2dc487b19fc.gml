@@ -3,10 +3,10 @@ if(action == "flipTime"){
 	vspeed = -3.5;
 	image_index = 1;
 	if(image_xscale > 0){
-		hspeed = 1;
+		hspeed = 1.5;
 	}
 	else{
-		hspeed = -1;
+		hspeed = -1.5;
 	}
 	alarm[0] = 0;
 	alarm[2] = 18;

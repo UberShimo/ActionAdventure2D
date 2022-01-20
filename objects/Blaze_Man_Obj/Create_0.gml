@@ -12,4 +12,6 @@ startAction = "FaceBlaze";
 global.isControllable = false;
 audio_stop_all();
 
+instance_destroy(Worm_Obj);
+
 alarm[3] = 120;

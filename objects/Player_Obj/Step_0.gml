@@ -244,7 +244,7 @@ if(attackBuffer > 0 && !ATK){
         }
             
         alarm[0] = image_number * 4;
-        alarm[1] = 13; // noted
+        alarm[1] = 9; // noted
     }
     else if(global.weapon = "scythe"){
         if(Duck){
