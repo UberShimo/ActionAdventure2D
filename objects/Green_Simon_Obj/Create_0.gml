@@ -1,6 +1,6 @@
 event_inherited();
 
-HP = 60;
+HP = 80;
 maxHP = HP;
 splatColor = c_green;
 hpBarWidth = 32;

@@ -8,26 +8,12 @@ else{
 
 if(!ATK && !hurt){
     image_speed = 0;
-    
-    if (x < Player_Obj.x) //Face right
-    {
-        if (x <= Player_Obj.x - 112 )//Too far from player, so tries to walk closer
-        {
-            if (place_free(x+1, y))
-            {
-                x += 0.2;
-                
-                sprite_index = Troll_R_Spr;
-				image_xscale = 1;
-                image_index += 0.1;
-            }
-        }
-        
-        if (x > Player_Obj.x - 112 &&
-        x < Player_Obj.x - 48)//Ranged range
-        {
-            if (place_free(x+1, y) && x > Player_Obj.x - 112)
-            {
+	
+    //Face right
+    if (x < Player_Obj.x) {
+		//Ranged range
+        if (x < Player_Obj.x - 48){
+            if (place_free(x+1, y)){
                 x += 0.2;
                 
                 sprite_index = Troll_R_Spr;
@@ -35,8 +21,8 @@ if(!ATK && !hurt){
                 image_index -= 0.1;
             }
             
-            if (ATK_load = 90) //Ranged ATK
-            {
+			//Ranged ATK
+            if (ATK_load >= 60){
                 ATK = true;
                 ATK_load = 0;
                 
@@ -49,16 +35,13 @@ if(!ATK && !hurt){
                 
                 alarm[1] = 40;
             }
-            else
-            {
+            else{
                 ATK_load += 0.5;
             }
         }
-        
-        if (x >= Player_Obj.x-48)//Close combat
-        {
-            if (place_free(x+1, y))
-            {
+        //Close combat
+        if (x >= Player_Obj.x-48){
+            if (place_free(x+1, y)){
                 x += 0.2;
                 
                 sprite_index = Troll_R_Spr;
@@ -66,9 +49,9 @@ if(!ATK && !hurt){
                 image_index += 0.1;
             }
             
-            if(ATK_load = 60){ 
-                if (random_range(0, 2) < 1) //ATK
-                {
+            if(ATK_load >= 60){
+				//ATK
+                if (random_range(0, 2) < 1){
                     ATK = true;
                     ATK_load = 0;
                     action = "Hit_R";
@@ -101,32 +84,19 @@ if(!ATK && !hurt){
         }
     }
     else //Face left
-    {
-        if (x >= Player_Obj.x + 112 )//Too far from player, so tries to walk closer
-        {
-            if (place_free(x-1, y))
-            {
+    if (x > Player_Obj.x) {
+		//Ranged range
+        if (x > Player_Obj.x + 48){
+            if (place_free(x-1, y)){
                 x -= 0.2;
                 
                 sprite_index = Troll_L_Spr;
 				image_xscale = 1;
-                image_index += 0.1;
-            }
-        }
-        
-        if (x < Player_Obj.x + 112 &&
-        x > Player_Obj.x + 48)//Ranged attacks
-        {
-            if (place_free(x-1, y) && x < Player_Obj.x + 112)
-            {
-                x -= 0.2;
-                
-                sprite_index = Troll_L_Spr;
                 image_index -= 0.1;
             }
             
-            if (ATK_load = 90) //Ranged ATK
-            {
+			//Ranged ATK
+            if (ATK_load >= 60){
                 ATK = true;
                 ATK_load = 0;
                 
@@ -139,16 +109,13 @@ if(!ATK && !hurt){
                 
                 alarm[1] = 40;
             }
-            else
-            {
+            else{
                 ATK_load += 0.5;
             }
         }
-        
-        if (x <= Player_Obj.x+48)//Close combat
-        {
-            if (place_free(x-1, y))
-            {
+        //Close combat
+        if (x <= Player_Obj.x+48){
+            if (place_free(x-1, y)){
                 x -= 0.2;
                 
                 sprite_index = Troll_L_Spr;
@@ -156,9 +123,9 @@ if(!ATK && !hurt){
                 image_index += 0.1;
             }
             
-            if(ATK_load = 60){ 
-                if (random_range(0, 2) < 1) //ATK
-                {
+            if(ATK_load >= 60){
+				//ATK
+                if (random_range(0, 2) < 1){
                     ATK = true;
                     ATK_load = 0;
                     action = "Hit_L";

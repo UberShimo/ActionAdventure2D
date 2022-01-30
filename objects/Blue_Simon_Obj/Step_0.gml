@@ -25,6 +25,29 @@ if(spawnOrbs){
 }
 
 if(HP <= 0 && !hurt){
+	if(instance_exists(Red_Simon_Obj)){
+		with(Red_Simon_Obj){
+			HP += 20;
+			repeat(12){
+				instance_create_depth(x, y, 10, Heal_Eff_Obj);
+			}
+			if(HP > maxHP){
+				HP = maxHP;
+			}
+		}
+	}
+	if(instance_exists(Green_Simon_Obj)){
+		with(Green_Simon_Obj){
+			HP += 20;
+			repeat(12){
+				instance_create_depth(x, y, 10, Heal_Eff_Obj);
+			}
+			if(HP > maxHP){
+				HP = maxHP;
+			}
+		}
+	}
+	
 	Nightmare_Controller_Obj.existingSimons--;
     instance_destroy(Blue_Orb_Spawner_Obj);
 	instance_destroy(Blue_Orb_Obj);
